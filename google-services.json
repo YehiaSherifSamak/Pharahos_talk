@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "293965893518",
+    "firebase_url": "https://pharaohstalk-9ecb5.firebaseio.com",
+    "project_id": "pharaohstalk-9ecb5",
+    "storage_bucket": "pharaohstalk-9ecb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293965893518:android:b01db18433589acd",
+        "android_client_info": {
+          "package_name": "org.tensorflow.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293965893518-nvt3ia441s35fe7pat6liledfjq0dqoh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.tensorflow.demo",
+            "certificate_hash": "1a466973a2a8a69ed4cd32755d15c3b96d8a6cab"
+          }
+        },
+        {
+          "client_id": "293965893518-k1vmj3tvq3i97prnidgih77cuic140cd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBurUd53_gwfrBG41JwB6HXpTmJ1H47g7M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293965893518-k1vmj3tvq3i97prnidgih77cuic140cd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

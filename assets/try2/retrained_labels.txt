@@ -1,0 +1,7 @@
+nef
+tot
+chairs
+floors
+humans
+tables
+walls
