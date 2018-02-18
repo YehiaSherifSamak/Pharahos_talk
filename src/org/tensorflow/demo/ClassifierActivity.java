@@ -31,6 +31,10 @@ import android.os.Trace;
 import android.util.Size;
 import android.util.TypedValue;
 import android.view.Display;
+import android.view.View;
+import android.widget.Button;
+
+import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
 import org.tensorflow.demo.OverlayView.DrawCallback;
@@ -100,7 +104,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
   private Matrix frameToCropTransform;
   private Matrix cropToFrameTransform;
 
-    private ResultsView resultsView;
+   private ResultsView resultsView;
 
   private BorderedText borderedText;
 
@@ -237,7 +241,39 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
             lastProcessingTimeMs = SystemClock.uptimeMillis() - startTime;
 
             cropCopyBitmap = Bitmap.createBitmap(croppedBitmap);
-            resultsView.setResults(results);
+          resultsView.setResults(results);
+          //this my code
+              //------------------------------------------------------------------------------------------------------------
+              runOnUiThread(new Runnable() {
+                  @Override
+                  public void run() {
+                      Iterator resultsListIterator = results.iterator();
+                      Button unityTravelButton = (Button) findViewById(R.id.unityTravelButton);
+                      if(resultsListIterator.hasNext())
+                      {
+
+                          Classifier.Recognition firstItemInTheResultList = (Classifier.Recognition) resultsListIterator.next();
+                          String firstItemName = firstItemInTheResultList.getTitle();
+                          if(firstItemName.equals("tot")  || firstItemName.equals("nef"))
+                          {
+                              unityTravelButton.setText(firstItemName);
+                              unityTravelButton.setVisibility(View.VISIBLE);
+                          }
+                          else
+                          {
+                              unityTravelButton.setVisibility(View.GONE);
+                          }
+                      }
+                      else
+                      {
+                          unityTravelButton.setVisibility(View.GONE);
+                      }
+
+
+                  }
+              });
+
+              //------------------------------------------------------------------------------------------------------------
             requestRender();
             computing = false;
           }
@@ -283,4 +319,14 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
       borderedText.drawLines(canvas, 10, canvas.getHeight() - 10, lines);
     }
   }
+  //my code starts here
+   // ----------------------------------------------------------------------------------------------------------------------
+    @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        finish();
+    }
+
 }
+
