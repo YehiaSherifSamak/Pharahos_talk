@@ -85,7 +85,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
   private static final boolean MAINTAIN_ASPECT = true;
 // default DESIRED_PREVIEW_SIZE was width 640 and height 480
     // full screen but magnified was size width 1280 and height 680
-  private static final Size DESIRED_PREVIEW_SIZE = new Size(640, 480);
+  private static final Size DESIRED_PREVIEW_SIZE = new Size(1000, 715);
 
   private Classifier classifier;
 
@@ -105,7 +105,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
   private Matrix frameToCropTransform;
   private Matrix cropToFrameTransform;
 //1/3 comments
-   private ResultsView resultsView;
+ //  private ResultsView resultsView;
 
   private BorderedText borderedText;
 
@@ -142,7 +142,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
             INPUT_NAME,
             OUTPUT_NAME);
     //2/3 comment
-    resultsView = (ResultsView) findViewById(R.id.results);
+  //  resultsView = (ResultsView) findViewById(R.id.results);
     previewWidth = size.getWidth();
     previewHeight = size.getHeight();
 
@@ -243,7 +243,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
 
             cropCopyBitmap = Bitmap.createBitmap(croppedBitmap);
             //3/3 comments
-         resultsView.setResults(results);
+         //resultsView.setResults(results);
           //this my code
               //------------------------------------------------------------------------------------------------------------
               runOnUiThread(new Runnable() {
