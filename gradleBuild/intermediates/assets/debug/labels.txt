@@ -1,5 +1,9 @@
-nef
-tot
+hatshepsut
+ikhnaton
+nefertiti
+ramsis
+sphinx
+tutankhamun
 chairs
 floors
 humans

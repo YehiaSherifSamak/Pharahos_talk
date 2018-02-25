@@ -16,7 +16,7 @@
 -->
 
 <resources>
-    <string name="app_name">TensorFlow Demo</string>
+    <string name="app_name">Pharaohs Talk</string>
     <string name="activity_name_classification">Pharaohs Talk</string>
     <string name="activity_name_detection">TF Detect</string>
     <string name="activity_name_stylize">TF Stylize</string>
