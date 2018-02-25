@@ -1,6 +1,7 @@
 -- Merging decision tree log ---
 manifest
 ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-53:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-53:12
 MERGED from [org.tensorflow:tensorflow-android:1.5.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.5.0.aar\3c8235800d57d7dac1b47ac654143d99\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\c0fa8d4cdbe2053af3dabfc0f5dfabf3\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-crash:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.8.0.aar\d341c55b9a2fe1fc2abda1c43da0dd58\AndroidManifest.xml:17:1-27:12
@@ -49,8 +50,11 @@ MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0]
 MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\7bff07a249c1d052272b42b03bd22abd\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-vision-common-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-license-11.8.0.aar\19d6c7b35d7c98eedbf4669a83a37d78\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\4a1aa2aa6df292889095e36e2c0dcbd6\AndroidManifest.xml:2:1-6:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-53:12
 	package
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:17:5-34
+		INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml
+		INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:11-69
 uses-sdk
