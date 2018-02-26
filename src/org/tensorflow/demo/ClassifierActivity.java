@@ -32,7 +32,11 @@ import android.util.Size;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.View;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.Iterator;
 import java.util.List;
@@ -85,6 +89,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
   private static final boolean MAINTAIN_ASPECT = true;
 // default DESIRED_PREVIEW_SIZE was width 640 and height 480
     // full screen but magnified was size width 1280 and height 680
+    // full screen and every thing work fine with width 1000 and height 715
   private static final Size DESIRED_PREVIEW_SIZE = new Size(1000, 715);
 
   private Classifier classifier;
@@ -246,11 +251,18 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
          //resultsView.setResults(results);
           //this my code
               //------------------------------------------------------------------------------------------------------------
+
               runOnUiThread(new Runnable() {
                   @Override
                   public void run() {
+                      boolean seen = false;
+                      Integer seenInt = 0;
+
+                      ImageView upperImageView;
+                      upperImageView = (ImageView) findViewById(R.id.upperImageView) ;
                       Iterator resultsListIterator = results.iterator();
                       Button unityTravelButton = (Button) findViewById(R.id.unityTravelButton);
+                      ImageView arrowImageView = (ImageView) findViewById(R.id.arrowImageView);
                       if(resultsListIterator.hasNext())
                       {
 
@@ -258,24 +270,57 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                           String firstItemName = firstItemInTheResultList.getTitle();
                           double firstItemAcc = firstItemInTheResultList.getConfidence();
                           if((!firstItemName.equals("chairs") && !firstItemName.equals("floors")&& !firstItemName.equals("humans")&&
-                          !firstItemName.equals("tables")&& !firstItemName.equals("walls"))  && firstItemAcc >= 0.9)
+                          !firstItemName.equals("tables")&& !firstItemName.equals("walls"))  && firstItemAcc >= 0.70)
                           {
+
+                              upperImageView.setImageResource(R.drawable.tutankhamun);
+                              upperImageView.setVisibility(View.VISIBLE);
                               unityTravelButton.setText(firstItemName);
                               unityTravelButton.setVisibility(View.VISIBLE);
+                              arrowImageView.setImageResource(R.drawable.hand_arrow);
+                              arrowImageView.setVisibility(View.VISIBLE);
+
+                              if(seenInt != 1) {
+
+                                  TranslateAnimation animation = new TranslateAnimation(0.0f, 500.0f,
+                                          300.0f, 300.0f);          //  new TranslateAnimation(xFrom,xTo, yFrom,yTo)
+                                  animation.setDuration(500);  // animation duration
+                                  animation.setRepeatCount(5);// animation repeat count
+
+                                  //  animation.setRepeatMode(2);   // repeat animation (left to right, right to left )
+                                  //animation.setFillAfter(true);
+                                  arrowImageView.startAnimation(animation);
+
+                              }
+                              seen = true;
+                              seenInt = 1;
+
                           }
                           else
                           {
                               unityTravelButton.setVisibility(View.GONE);
+                              upperImageView.setVisibility(View.GONE);
+                              arrowImageView.setVisibility(View.GONE);
+                              arrowImageView.clearAnimation();
+                              seen = false;
+                              seenInt=-1;
+
                           }
                       }
                       else
                       {
                           unityTravelButton.setVisibility(View.GONE);
+                          upperImageView.setVisibility(View.GONE);
+                          arrowImageView.setVisibility(View.GONE);
+                          seen = false;
+                          seenInt = -1;
+
                       }
 
 
                   }
               });
+
 
               //------------------------------------------------------------------------------------------------------------
             requestRender();

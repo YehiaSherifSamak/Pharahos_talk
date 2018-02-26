@@ -264,6 +264,10 @@
         "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\3607d1919ea2d69749672fe90941566b\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
+        "merged": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\res\\merged\\debug\\drawable_tutankhamun.jpg.flat",
+        "source": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\res\\drawable\\tutankhamun.jpg"
+    },
+    {
         "merged": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\b1a65346814f3b43c18d73431fc73503\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
@@ -562,6 +566,10 @@
     {
         "merged": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\b1a65346814f3b43c18d73431fc73503\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\res\\merged\\debug\\drawable_hand_arrow.png.flat",
+        "source": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\res\\drawable\\hand_arrow.png"
     },
     {
         "merged": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_seek_thumb.xml.flat",

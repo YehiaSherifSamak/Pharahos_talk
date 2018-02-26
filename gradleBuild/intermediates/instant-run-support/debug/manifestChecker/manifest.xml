@@ -52,7 +52,9 @@
             android:label="@string/activity_name_classification"
             android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="org.tensorflow.demo.SignIn" >
+        <activity
+            android:name="org.tensorflow.demo.SignIn"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
