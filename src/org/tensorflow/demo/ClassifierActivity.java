@@ -36,7 +36,9 @@ import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Iterator;
 import java.util.List;
@@ -257,7 +259,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                   public void run() {
                       boolean seen = false;
                       Integer seenInt = 0;
-
+                      RelativeLayout cameraConnectionRelativeLayout = (RelativeLayout) findViewById(R.id.cameraConnectionRelativeLayout);
                       ImageView upperImageView;
                       upperImageView = (ImageView) findViewById(R.id.upperImageView) ;
                       Iterator resultsListIterator = results.iterator();
@@ -272,13 +274,20 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                           if((!firstItemName.equals("chairs") && !firstItemName.equals("floors")&& !firstItemName.equals("humans")&&
                           !firstItemName.equals("tables")&& !firstItemName.equals("walls"))  && firstItemAcc >= 0.70)
                           {
-
+                              seen = true;
                               upperImageView.setImageResource(R.drawable.tutankhamun);
                               upperImageView.setVisibility(View.VISIBLE);
                               unityTravelButton.setText(firstItemName);
                               unityTravelButton.setVisibility(View.VISIBLE);
                               arrowImageView.setImageResource(R.drawable.hand_arrow);
                               arrowImageView.setVisibility(View.VISIBLE);
+                              cameraConnectionRelativeLayout.setOnTouchListener(new OnSwipeTouchListener(ClassifierActivity.this)
+                              {
+                                  public void onSwipeRight() {
+
+                                      Toast.makeText(ClassifierActivity.this, "right", Toast.LENGTH_SHORT).show();
+                                  }
+                              });
 
                               if(seenInt != 1) {
 
@@ -292,7 +301,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                                   arrowImageView.startAnimation(animation);
 
                               }
-                              seen = true;
+
                               seenInt = 1;
 
                           }
@@ -304,6 +313,13 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                               arrowImageView.clearAnimation();
                               seen = false;
                               seenInt=-1;
+                              cameraConnectionRelativeLayout.setOnTouchListener(new OnSwipeTouchListener(ClassifierActivity.this)
+                              {
+                                  public void onSwipeRight() {
+
+                                      Toast.makeText(ClassifierActivity.this, "left", Toast.LENGTH_SHORT).show();
+                                  }
+                              });
 
                           }
                       }
@@ -314,6 +330,13 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                           arrowImageView.setVisibility(View.GONE);
                           seen = false;
                           seenInt = -1;
+                          cameraConnectionRelativeLayout.setOnTouchListener(new OnSwipeTouchListener(ClassifierActivity.this)
+                          {
+                              public void onSwipeRight() {
+
+                                  Toast.makeText(ClassifierActivity.this, "left", Toast.LENGTH_SHORT).show();
+                              }
+                          });
 
                       }
 
