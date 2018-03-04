@@ -1,4 +1,4 @@
-#Sun Feb 25 20:11:56 EET 2018
-base.0=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\78
+#Wed Feb 28 01:16:14 EET 2018
+base.0=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\20
 path.0=classes.dex
 renamed.0=classes.dex

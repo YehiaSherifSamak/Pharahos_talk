@@ -25,11 +25,17 @@ buildscript {
     repositories {
         jcenter()
         google()
+
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
         classpath 'com.google.gms:google-services:3.2.0'
+        classpath 'io.fabric.tools:gradle:1.25.1'
     }
 }
 
@@ -45,7 +51,26 @@ android {
     lintOptions {
         abortOnError false
     }
-
+    packagingOptions {
+        exclude "lib/armeabi/libbitmaps.so"
+        exclude "lib/armeabi/libgifimage.so"
+        exclude "lib/armeabi/libimagepipeline.so"
+        exclude "lib/armeabi/libmemchunk.so"
+        exclude "lib/armeabi/libwebp.so"
+        exclude "lib/armeabi/libwebpimage.so"
+        exclude "lib/arm64-v8a/libbitmaps.so"
+        exclude "lib/arm64-v8a/libgifimage.so"
+        exclude "lib/arm64-v8a/libimagepipeline.so"
+        exclude "lib/arm64-v8a/libmemchunk.so"
+        exclude "lib/arm64-v8a/libwebp.so"
+        exclude "lib/arm64-v8a/libwebpimage.so"
+        exclude "lib/x86_64/libbitmaps.so"
+        exclude "lib/x86_64/libgifimage.so"
+        exclude "lib/x86_64/libimagepipeline.so"
+        exclude "lib/x86_64/libmemchunk.so"
+        exclude "lib/x86_64/libwebp.so"
+        exclude "lib/x86_64/libwebpimage.so"
+    }
     sourceSets {
         main {
             // Android demo app sources.
@@ -62,18 +87,22 @@ android {
 
             repositories {
                 jcenter()
+
             }
 
             dependencies {
                 compile 'org.tensorflow:tensorflow-android:1.5.0'
                 compile 'com.google.firebase:firebase-core:11.8.0'
-                compile 'com.google.firebase:firebase-crash:11.8.0'
+               // compile 'com.google.firebase:firebase-crash:11.8.0'
                 compile 'com.google.firebase:firebase-firestore:11.8.0'
                 compile 'com.google.firebase:firebase-database:11.8.0'
                 compile 'com.google.firebase:firebase-storage:11.8.0'
                 compile 'com.google.firebase:firebase-auth:11.8.0'
                 compile 'com.google.android.gms:play-services-auth:11.8.0'
                 compile 'com.google.android.gms:play-services-vision:11.8.0'
+                compile('com.crashlytics.sdk.android:crashlytics:2.9.0@aar') {
+                    transitive = true
+                }
 
             }
 
@@ -88,8 +117,12 @@ android {
 dependencies {
     implementation 'com.android.support:appcompat-v7:25.+'
     implementation 'com.android.support.constraint:constraint-layout:+'
+    implementation project(':unitycam')
 }
 repositories {
     google()
+    maven { url 'https://maven.fabric.io/public' }
 }
+
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'

@@ -23,7 +23,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\b1a65346814f3b43c18d73431fc73503\\res\\values-v14\\values-v14.xml",
+                    "source": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\unitycam\\build\\intermediates\\bundles\\debug\\res\\values-v14\\values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "154"
+                    },
+                    "to": {
+                        "startLines": "33",
+                        "startColumns": "4",
+                        "startOffsets": "2246",
+                        "endLines": "34",
+                        "endColumns": "8",
+                        "endOffsets": "2345"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\9a4916f43d56145c5b6baded3c5a8f53\\res\\values-v14\\values-v14.xml",
                     "from": {
                         "startLines": "2,7,8,9,15,21,22,23,24,25,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

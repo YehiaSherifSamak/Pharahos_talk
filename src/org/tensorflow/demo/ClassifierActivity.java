@@ -16,6 +16,7 @@
 
 package org.tensorflow.demo;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
@@ -26,8 +27,10 @@ import android.media.Image;
 import android.media.Image.Plane;
 import android.media.ImageReader;
 import android.media.ImageReader.OnImageAvailableListener;
+import android.os.Handler;
 import android.os.SystemClock;
 import android.os.Trace;
+import android.util.DisplayMetrics;
 import android.util.Size;
 import android.util.TypedValue;
 import android.view.Display;
@@ -40,6 +43,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
@@ -48,6 +52,12 @@ import org.tensorflow.demo.env.BorderedText;
 import org.tensorflow.demo.env.ImageUtils;
 import org.tensorflow.demo.env.Logger;
 import org.tensorflow.demo.R;
+
+import com.DefaultCompany.unitycam.UnityPlayerActivity;
+import com.crashlytics.android.Crashlytics;
+import com.google.firebase.auth.FirebaseAuth;
+
+import io.fabric.sdk.android.Fabric;
 
 public class ClassifierActivity extends CameraActivity implements OnImageAvailableListener {
   private static final Logger LOGGER = new Logger();
@@ -76,7 +86,9 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
   private static final String INPUT_NAME = "Mul:0";
   private static final String OUTPUT_NAME = "final_result";
   */
+//---------------------------
 
+    //--------------------------------
   private static final int INPUT_SIZE = 224;
   private static final int IMAGE_MEAN = 128;
   private static final float IMAGE_STD = 128.0f;
@@ -92,7 +104,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
 // default DESIRED_PREVIEW_SIZE was width 640 and height 480
     // full screen but magnified was size width 1280 and height 680
     // full screen and every thing work fine with width 1000 and height 715
-  private static final Size DESIRED_PREVIEW_SIZE = new Size(1000, 715);
+  private static final Size DESIRED_PREVIEW_SIZE = new Size(1280, 720);
 
   private Classifier classifier;
 
@@ -132,6 +144,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
 
   @Override
   public void onPreviewSizeChosen(final Size size, final int rotation) {
+      Fabric.with(this, new Crashlytics());
     final float textSizePx =
         TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_DIP, TEXT_SIZE_DIP, getResources().getDisplayMetrics());
@@ -275,17 +288,40 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                           !firstItemName.equals("tables")&& !firstItemName.equals("walls"))  && firstItemAcc >= 0.70)
                           {
                               seen = true;
-                              upperImageView.setImageResource(R.drawable.tutankhamun);
+                              switch (firstItemName)
+                              {
+                                  case "tutankhamun":
+                                      upperImageView.setImageResource(R.drawable.tutankamoun);
+                                      break;
+                                  case "nefertiti":
+                                      upperImageView.setImageResource(R.drawable.nefdark);
+                                      break;
+                                  case "sphinx":
+                                      upperImageView.setImageResource(R.drawable.sphinixdark);
+                                      break;
+                                  case "ramsis":
+                                      upperImageView.setImageResource(R.drawable.ramsisd);
+                                      break;
+                                  case "ikhnaton":
+                                      upperImageView.setImageResource(R.drawable.ikhnatondark);
+                                      break;
+                              }
                               upperImageView.setVisibility(View.VISIBLE);
-                              unityTravelButton.setText(firstItemName);
+                              unityTravelButton.setText("Swipe to Travel Back in Time");
                               unityTravelButton.setVisibility(View.VISIBLE);
-                              arrowImageView.setImageResource(R.drawable.hand_arrow);
+                              arrowImageView.setImageResource(R.drawable.gooldold);
                               arrowImageView.setVisibility(View.VISIBLE);
                               cameraConnectionRelativeLayout.setOnTouchListener(new OnSwipeTouchListener(ClassifierActivity.this)
                               {
                                   public void onSwipeRight() {
 
+                                      Intent i = new Intent(ClassifierActivity.this, UnityPlayerActivity.class);
+
+
+                                      startActivity(i);
+
                                       Toast.makeText(ClassifierActivity.this, "right", Toast.LENGTH_SHORT).show();
+
                                   }
                               });
 
@@ -396,8 +432,9 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
     @Override
     public void onBackPressed()
     {
-        super.onBackPressed();
-        finish();
+        FirebaseAuth.getInstance().signOut();
+        Intent backIntent = new Intent(ClassifierActivity.this, SignIn.class);
+        startActivity(backIntent);
     }
 
 }

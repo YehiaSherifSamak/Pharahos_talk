@@ -22,14 +22,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-public class SignIn extends Activity {
-    Button loginButton, registerButton, googleButton;
+public class SignIn extends Activity{
+    Button loginButton;
+    TextView registerButton;
     EditText emailEditText, passwordEditText;
     FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListener;
@@ -37,16 +39,27 @@ public class SignIn extends Activity {
     public static final String TAG="Login";
     ProgressDialog mDialog;
     String mEmail,mPassword;
+    TextView signUpTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-        loginButton = (Button) findViewById(R.id.loginButton);
-        registerButton = (Button) findViewById(R.id.registerButton);
+        Fabric.with(this, new Crashlytics());
+        loginButton = (Button) findViewById(R.id.signinButton);
+        registerButton = (TextView) findViewById(R.id.signupTextView);
         emailEditText = (EditText) findViewById(R.id.emailEditText);
         passwordEditText = (EditText) findViewById(R.id.passwordEditText);
      //   googleButton = (Button) findViewById(R.id.google_sign_in_button);
-        mDialog=new ProgressDialog(this);
+        signUpTextView = (TextView) findViewById(R.id.signupTextView);
+      signUpTextView.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v)
+          {
+              startActivity(new Intent(SignIn.this, SignUp.class));
+          }
+
+      });
+        mDialog = new ProgressDialog(this);
         mAuth=FirebaseAuth.getInstance();
         mUser=FirebaseAuth.getInstance().getCurrentUser();
         mAuthListener= new FirebaseAuth.AuthStateListener(){
@@ -95,8 +108,10 @@ public class SignIn extends Activity {
     @Override
     public void onBackPressed()
     {
-        super.onBackPressed();
+      /*  super.onBackPressed();
+        finish();*/
         finish();
+        System.exit(0);
     }
     public void userSign()
     {
