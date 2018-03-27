@@ -28,6 +28,4 @@
     </style>
     <style name="TextAppearance.StatusBar.EventContent.Time"/>
     <style name="TextAppearance.StatusBar.EventContent.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
-    <style name="UnityThemeSelector" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
-</style>
 </resources>

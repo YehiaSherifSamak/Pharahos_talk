@@ -1,7 +1,7 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-67:12
-INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-67:12
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-71:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-71:12
 MERGED from [org.tensorflow:tensorflow-android:1.5.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.5.0.aar\c6f299504e19e6474dc0f3dedbf867eb\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\c9803e99aeb8d951b938b52dfafe8f9d\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-firestore:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-firestore-11.8.0.aar\1063e62c45449c8440c0aae83ba31e96\AndroidManifest.xml:2:1-8:12
@@ -12,8 +12,7 @@ MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yahya\.g
 MERGED from [com.google.android.gms:play-services-vision:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.8.0.aar\7d0e0af607af6115db7671d6712ab81c\AndroidManifest.xml:2:1-9:12
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.0.aar\4095a2aad5617765c161b236925f629c\AndroidManifest.xml:2:1-19:12
 MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\9a4916f43d56145c5b6baded3c5a8f53\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta5] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0-beta5.aar\d6af16c6fa4feebd53f33cb68221fd30\AndroidManifest.xml:2:1-11:12
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-82:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta6] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0-beta6.aar\e0e6ae557ba70f543df46da1b2546723\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6129b0f38b41c4da0c14cd97500907e8\AndroidManifest.xml:17:1-54:12
 MERGED from [com.google.firebase:firebase-database-connection:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\5f91dfdeb4ac816f1d7d5a6e3659c101\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\419057139044f335d68974dfbcbca830\AndroidManifest.xml:17:1-40:12
@@ -54,7 +53,7 @@ MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] C:\U
 MERGED from [com.google.android.gms:play-services-vision-common-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-license-11.8.0.aar\7ba3a66a6a9dbcdda66f6e8833242936\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\c292e2316b7c00393103d282cb3a5b3d\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\378393c74f9878c98291e83542433104\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-67:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-71:12
 	package
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:18:5-34
 		INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml
@@ -83,10 +82,8 @@ MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.0] C:\Users\yahya\.grad
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.0.aar\4095a2aad5617765c161b236925f629c\AndroidManifest.xml:7:5-43
 MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\9a4916f43d56145c5b6baded3c5a8f53\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\9a4916f43d56145c5b6baded3c5a8f53\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta5] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0-beta5.aar\d6af16c6fa4feebd53f33cb68221fd30\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta5] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0-beta5.aar\d6af16c6fa4feebd53f33cb68221fd30\AndroidManifest.xml:5:5-7:41
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:5-11:41
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:5-11:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta6] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0-beta6.aar\e0e6ae557ba70f543df46da1b2546723\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta6] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0-beta6.aar\e0e6ae557ba70f543df46da1b2546723\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6129b0f38b41c4da0c14cd97500907e8\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6129b0f38b41c4da0c14cd97500907e8\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-database-connection:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\5f91dfdeb4ac816f1d7d5a6e3659c101\AndroidManifest.xml:6:5-44
@@ -175,20 +172,14 @@ MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yahya\.gr
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:21:9-35
 uses-permission#android.permission.CAMERA
 ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:24:5-65
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:23:5-65
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:23:5-65
 	android:name
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:24:22-62
 uses-feature#android.hardware.camera
 ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:26:5-60
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-27:36
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-27:36
 	android:name
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:26:19-57
 uses-feature#android.hardware.camera.autofocus
 ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:27:5-70
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:28:5-30:36
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:28:5-30:36
 	android:name
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:27:19-67
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -216,7 +207,7 @@ ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:34:
 	android:name
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:34:16-64
 application
-ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:37:5-65:19
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:37:5-69:19
 MERGED from [org.tensorflow:tensorflow-android:1.5.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.5.0.aar\c6f299504e19e6474dc0f3dedbf867eb\AndroidManifest.xml:5:5-6:19
 MERGED from [org.tensorflow:tensorflow-android:1.5.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.5.0.aar\c6f299504e19e6474dc0f3dedbf867eb\AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\c9803e99aeb8d951b938b52dfafe8f9d\AndroidManifest.xml:5:5-20
@@ -231,10 +222,8 @@ MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.0] C:\Users\yahya\.grad
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.0.aar\4095a2aad5617765c161b236925f629c\AndroidManifest.xml:11:5-17:19
 MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\9a4916f43d56145c5b6baded3c5a8f53\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\9a4916f43d56145c5b6baded3c5a8f53\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta5] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0-beta5.aar\d6af16c6fa4feebd53f33cb68221fd30\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta5] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0-beta5.aar\d6af16c6fa4feebd53f33cb68221fd30\AndroidManifest.xml:9:5-20
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:44:5-80:19
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:44:5-80:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta6] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0-beta6.aar\e0e6ae557ba70f543df46da1b2546723\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0-beta6] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0-beta6.aar\e0e6ae557ba70f543df46da1b2546723\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6129b0f38b41c4da0c14cd97500907e8\AndroidManifest.xml:27:5-52:19
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6129b0f38b41c4da0c14cd97500907e8\AndroidManifest.xml:27:5-52:19
 MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\419057139044f335d68974dfbcbca830\AndroidManifest.xml:27:5-38:19
@@ -313,16 +302,10 @@ MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yahya\.gr
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:39:9-34
 	android:icon
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:40:9-45
-		REJECTED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:46:9-42
 	android:allowBackup
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:38:9-35
-	android:banner
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:45:9-46
 	android:theme
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:42:9-45
-		REJECTED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:49:9-50
-	android:isGame
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:47:9-30
 	tools:replace
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:43:9-51
 activity#org.tensorflow.demo.ClassifierActivity
@@ -355,6 +338,12 @@ ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:59:
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:62:13-49
 	android:name
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:60:13-35
+activity#org.tensorflow.demo.Info
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:65:9-68:20
+	android:screenOrientation
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:66:13-49
+	android:name
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:65:19-58
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\b5dc6094c55d605533f9007bcb57cdff\AndroidManifest.xml:23:9-29:75
 	android:excludeFromRecents
@@ -389,8 +378,6 @@ ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yahya\.gr
 		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\e8fb38da43f9f04d5580e022dad5411d\AndroidManifest.xml:34:13-89
 uses-permission#android.permission.INTERNET
 ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.0.aar\4095a2aad5617765c161b236925f629c\AndroidManifest.xml:9:5-67
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:22:5-67
-MERGED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6129b0f38b41c4da0c14cd97500907e8\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6129b0f38b41c4da0c14cd97500907e8\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\419057139044f335d68974dfbcbca830\AndroidManifest.xml:23:5-67
@@ -439,94 +426,6 @@ MERGED from [com.android.support:support-compat:25.4.0] C:\Users\yahya\.gradle\c
 		ADDED from [com.android.support:appcompat-v7:25.4.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\9a4916f43d56145c5b6baded3c5a8f53\AndroidManifest.xml:28:13-35
 	android:name
 		ADDED from [com.android.support:appcompat-v7:25.4.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\9a4916f43d56145c5b6baded3c5a8f53\AndroidManifest.xml:27:13-51
-supports-screens
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-18:40
-	android:largeScreens
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:9-36
-	android:smallScreens
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:17:9-36
-	android:normalScreens
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:16:9-37
-	android:xlargeScreens
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:18:9-37
-	android:anyDensity
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:14:9-34
-uses-feature#0x00020000
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:5-54
-	android:glEsVersion
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:19-51
-uses-feature#android.hardware.camera.front
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:31:5-33:36
-	android:required
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:33:9-33
-	android:name
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:32:9-53
-uses-feature#android.hardware.touchscreen
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:34:5-36:36
-	android:required
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:36:9-33
-	android:name
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:35:9-52
-uses-feature#android.hardware.touchscreen.multitouch
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:37:5-39:36
-	android:required
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:39:9-33
-	android:name
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:38:9-63
-uses-feature#android.hardware.touchscreen.multitouch.distinct
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:40:5-42:36
-	android:required
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:42:9-33
-	android:name
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:41:9-72
-activity#com.DefaultCompany.unitycam.UnityPlayerActivity
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:50:9-66:20
-	android:screenOrientation
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:55:13-51
-	android:label
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:53:13-45
-	android:launchMode
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:54:13-44
-	android:configChanges
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:52:13-186
-	android:name
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:51:13-75
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER+android.intent.category.LEANBACK_LAUNCHER
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:56:13-61:29
-category#android.intent.category.LEANBACK_LAUNCHER
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:60:17-86
-	android:name
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:60:27-83
-meta-data#unityplayer.UnityActivity
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:63:13-65:40
-	android:value
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:65:17-37
-	android:name
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:64:17-57
-meta-data#unity.build-id
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:68:9-70:68
-	android:value
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:70:13-65
-	android:name
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:69:13-42
-meta-data#unity.splash-mode
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:71:9-73:33
-	android:value
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:73:13-30
-	android:name
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:72:13-45
-meta-data#unity.splash-enable
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:74:9-76:36
-	android:value
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:76:13-33
-	android:name
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:75:13-47
-meta-data#android.max_aspect
-ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:77:9-79:35
-	android:value
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:79:13-32
-	android:name
-		ADDED from [:unitycam] C:\Users\yahya\AndroidStudioProjects\tfmobile\unitycam\build\intermediates\manifests\full\debug\AndroidManifest.xml:78:13-46
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\6129b0f38b41c4da0c14cd97500907e8\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\419057139044f335d68974dfbcbca830\AndroidManifest.xml:24:5-79

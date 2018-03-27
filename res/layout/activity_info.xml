@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/projectemptybackground"
+  >
+
+    <ImageView
+        android:id="@+id/monumenImageView"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_marginBottom="342dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tout" />
+
+    <TextView
+        android:id="@+id/topicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="235dp"
+        android:text="Tout Ankh Amoun"
+        android:textColor="#b38006"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/topicTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:isScrollContainer="true"
+        android:text="@string/toutdesc"
+        android:textColor="#b38006"
+        android:textSize="20sp"
+        android:maxLines = "100"
+        android:scrollbars = "vertical"/>
+
+</RelativeLayout>

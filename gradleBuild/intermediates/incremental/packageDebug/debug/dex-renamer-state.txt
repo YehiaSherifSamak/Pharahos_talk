@@ -1,4 +1,4 @@
-#Sun Mar 04 03:56:38 EET 2018
+#Tue Mar 27 22:11:19 EET 2018
 path.1=classes.dex
 path.0=classes.dex
 renamed.5=classes6.dex
@@ -7,12 +7,12 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\33
-base.4=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\30
-base.3=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\35
-base.2=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\32
-base.1=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\34
-base.0=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\31
+base.5=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\72
+base.4=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\69
+base.3=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\71
+base.2=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\68
+base.1=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\73
+base.0=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\70
 path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex

@@ -53,7 +53,7 @@ import org.tensorflow.demo.env.ImageUtils;
 import org.tensorflow.demo.env.Logger;
 import org.tensorflow.demo.R;
 
-import com.DefaultCompany.unitycam.UnityPlayerActivity;
+//import com.DefaultCompany.unitycam.UnityPlayerActivity;
 import com.crashlytics.android.Crashlytics;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -282,7 +282,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                       {
 
                           Classifier.Recognition firstItemInTheResultList = (Classifier.Recognition) resultsListIterator.next();
-                          String firstItemName = firstItemInTheResultList.getTitle();
+                          final String firstItemName = firstItemInTheResultList.getTitle();
                           double firstItemAcc = firstItemInTheResultList.getConfidence();
                           if((!firstItemName.equals("chairs") && !firstItemName.equals("floors")&& !firstItemName.equals("humans")&&
                           !firstItemName.equals("tables")&& !firstItemName.equals("walls"))  && firstItemAcc >= 0.70)
@@ -304,6 +304,12 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                                       break;
                                   case "ikhnaton":
                                       upperImageView.setImageResource(R.drawable.ikhnatondark);
+
+                                      break;
+                                  case "hatshepsut":
+                                      upperImageView.setImageResource(R.drawable.hatshepsutdark);
+                                    break;
+                                  default:
                                       break;
                               }
                               upperImageView.setVisibility(View.VISIBLE);
@@ -315,13 +321,22 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                               {
                                   public void onSwipeRight() {
 
-                                      Intent i = new Intent(ClassifierActivity.this, UnityPlayerActivity.class);
+                                    //  Intent i = new Intent(ClassifierActivity.this, UnityPlayerActivity.class);
 
-
+                                      Intent i = new Intent(ClassifierActivity.this, Info.class);
                                       startActivity(i);
 
                                       Toast.makeText(ClassifierActivity.this, "right", Toast.LENGTH_SHORT).show();
 
+                                  }
+                              });
+                              unityTravelButton.setOnClickListener(new View.OnClickListener() {
+                                  @Override
+                                  public void onClick(View v) {
+                                      Intent infoIntent = new Intent(ClassifierActivity.this, Info.class);
+                                      infoIntent.putExtra("Monument_name", firstItemName);
+
+                                      startActivity(infoIntent);
                                   }
                               });
 

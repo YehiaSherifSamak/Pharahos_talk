@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/tfmobile.iml" filepath="$PROJECT_DIR$/tfmobile.iml" />
-      <module fileurl="file://$PROJECT_DIR$/unitycam/unitycam.iml" filepath="$PROJECT_DIR$/unitycam/unitycam.iml" />
     </modules>
   </component>
 </project>
