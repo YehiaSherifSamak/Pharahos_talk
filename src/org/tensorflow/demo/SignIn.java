@@ -20,8 +20,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+//import com.bridou_n.beaconscanner.features.beaconList.BeaconListActivity;
 import com.crashlytics.android.Crashlytics;
 import io.fabric.sdk.android.Fabric;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,6 +32,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+//import com.bridou_n.beaconscanner;
 public class SignIn extends Activity{
     Button loginButton;
     TextView registerButton;
@@ -39,23 +43,26 @@ public class SignIn extends Activity{
     public static final String TAG="Login";
     ProgressDialog mDialog;
     String mEmail,mPassword;
-    TextView signUpTextView;
+    Button signUpButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_signin);
         Fabric.with(this, new Crashlytics());
         loginButton = (Button) findViewById(R.id.signinButton);
         registerButton = (TextView) findViewById(R.id.signupTextView);
         emailEditText = (EditText) findViewById(R.id.emailEditText);
         passwordEditText = (EditText) findViewById(R.id.passwordEditText);
      //   googleButton = (Button) findViewById(R.id.google_sign_in_button);
-        signUpTextView = (TextView) findViewById(R.id.signupTextView);
-      signUpTextView.setOnClickListener(new View.OnClickListener() {
+        signUpButton = (Button) findViewById(R.id.signupButton);
+        ImageView signinImageView = (ImageView) findViewById(R.id.signinImageView);
+        signinImageView.setImageResource(R.drawable.photo1);
+        signUpButton.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v)
           {
               startActivity(new Intent(SignIn.this, SignUp.class));
+            //  startActivity(new Intent(SignIn.this, BeaconListActivity.class));
           }
 
       });
@@ -68,7 +75,7 @@ public class SignIn extends Activity{
             {
                 if(mUser!=null)
                 {
-                    Intent intent = new Intent(SignIn.this,ClassifierActivity.class);
+                    Intent intent = new Intent(SignIn.this, MainMenu.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }
@@ -105,14 +112,23 @@ public class SignIn extends Activity{
 
     }
 
-    @Override
+  /*  @Override
     public void onBackPressed()
     {
-      /*  super.onBackPressed();
-        finish();*/
+        FirebaseAuth.getInstance().signOut();
+        super.onBackPressed();
+
         finish();
-        System.exit(0);
-    }
+        //finish();
+       // System.exit(0);
+    }*/
+  public void onBackPressed(){
+      Intent a = new Intent(Intent.ACTION_MAIN);
+      a.addCategory(Intent.CATEGORY_HOME);
+      a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+      startActivity(a);
+
+  }
     public void userSign()
     {
         mEmail=emailEditText.getText().toString().trim();
@@ -141,11 +157,10 @@ public class SignIn extends Activity{
                 else
                 {
                     mDialog.dismiss();
-                    startActivity(new Intent(SignIn.this,ClassifierActivity.class));
+                    startActivity(new Intent(SignIn.this,MainMenu.class));
                 }
             }
         });
     }
-
 
 }

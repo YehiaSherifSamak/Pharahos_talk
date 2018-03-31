@@ -14,6 +14,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,11 +40,13 @@ public class SignUp extends Activity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_signup);
+        ImageView signupImageView = (ImageView)findViewById(R.id.signupImageView);
+        signupImageView.setImageResource(R.drawable.photo1);
         name = (EditText) findViewById(R.id.name);
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
-        register = (Button) findViewById(R.id.signUp);
+        register = (Button) findViewById(R.id.signup);
         login = (TextView) findViewById(R.id.signin);
         mAuth = FirebaseAuth.getInstance();
         register.setOnClickListener(this);

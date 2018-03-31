@@ -15,7 +15,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.tensorflow.demo">
+    package="org.tensorflow.demo"
+    >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -31,7 +32,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false" />
-    <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true"></meta-data>
+
 
 
     <application
@@ -63,8 +64,12 @@
 
         </activity>
         <activity android:name="org.tensorflow.demo.Info"
+            android:theme="@style/Theme.AppCompat"
             android:screenOrientation="portrait">
 
+        </activity>
+        <activity android:name="org.tensorflow.demo.MainMenu"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

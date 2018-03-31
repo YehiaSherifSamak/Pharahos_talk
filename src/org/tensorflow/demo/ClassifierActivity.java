@@ -323,10 +323,10 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
 
                                     //  Intent i = new Intent(ClassifierActivity.this, UnityPlayerActivity.class);
 
-                                      Intent i = new Intent(ClassifierActivity.this, Info.class);
-                                      startActivity(i);
+                                      Intent infoIntent = new Intent(ClassifierActivity.this, Info.class);
+                                      infoIntent.putExtra("Monument_name", firstItemName);
 
-                                      Toast.makeText(ClassifierActivity.this, "right", Toast.LENGTH_SHORT).show();
+                                      startActivity(infoIntent);
 
                                   }
                               });
@@ -447,8 +447,8 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
     @Override
     public void onBackPressed()
     {
-        FirebaseAuth.getInstance().signOut();
-        Intent backIntent = new Intent(ClassifierActivity.this, SignIn.class);
+
+        Intent backIntent = new Intent(ClassifierActivity.this, MainMenu.class);
         startActivity(backIntent);
     }
 

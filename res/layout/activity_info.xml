@@ -1,48 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/projectemptybackground"
-  >
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/monumenImageView"
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
         android:layout_width="match_parent"
-        android:layout_height="225dp"
-        android:layout_marginBottom="342dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tout" />
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true">
 
-    <TextView
-        android:id="@+id/topicTextView"
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:expandedTitleTextAppearance="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/bgheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                android:src="@drawable/tout"
+                />
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/MyToolbar"
+                android:title="Tout Ankh Amoun"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="parallax"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/youtube"
+        android:src="@drawable/youtube"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="235dp"
-        android:text="Tout Ankh Amoun"
-        android:textColor="#b38006"
-        android:textSize="35sp"
-        android:textStyle="bold" />
+        app:elevation="6dp"
+        app:layout_anchor="@id/MyAppbar"
+        app:layout_anchorGravity="bottom|right|end"
+        app:useCompatPadding="true"
+        android:background="#33B5E5"/>
 
-    <TextView
-        android:id="@+id/infoTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/topicTextView"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="10dp"
-        android:isScrollContainer="true"
-        android:text="@string/toutdesc"
-        android:textColor="#b38006"
-        android:textSize="20sp"
-        android:maxLines = "100"
-        android:scrollbars = "vertical"/>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ayhaga"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="#FFFFFF">
+        
 
-</RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:isScrollContainer="true"
+                android:maxLines="100"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:text="@string/toutdesc"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle=""
+                android:fontFamily="sans-serif-condensed"/>
+        </ScrollView>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

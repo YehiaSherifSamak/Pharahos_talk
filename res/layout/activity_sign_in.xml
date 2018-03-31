@@ -80,6 +80,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/signupTextView"
 
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signinButton" />
 
@@ -87,13 +88,12 @@
         android:id="@+id/signupTextView"
         android:layout_width="77dp"
         android:layout_height="26dp"
-        android:layout_marginBottom="34dp"
-        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="64dp"
         android:text="Sign Up"
         android:textColor="#b38006"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
