@@ -4,17 +4,7 @@
             "outputFile": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\13263b22abc66aca294e1c5535e300f4\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,125,189,260",
-                        "endColumns": "69,63,70,67",
-                        "endOffsets": "120,184,255,323"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\30289009e8007233cc145e8d2dde2292\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\08fb54338026d1a2385db4492802fb65\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "9",
                         "endColumns": "12",
                         "endOffsets": "505"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\5a2068cc252e01adfdc40349fe75e3bc\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
                     }
                 }
             ]

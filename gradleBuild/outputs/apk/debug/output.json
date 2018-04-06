@@ -1,1 +1,1 @@
-[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":-1},"path":"tfmobile-debug.apk","properties":{"packageId":"org.tensorflow.demo","split":"","minSdkVersion":"21"}}]
+[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":16,"enabled":true,"outputFile":"tfmobile-debug.apk","fullName":"debug","baseName":"debug"},"path":"tfmobile-debug.apk","properties":{}}]

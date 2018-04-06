@@ -11,7 +11,9 @@ import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
+import org.tensorflow.demo.features.beaconList.BeaconListActivity;
 
+//import com.bridou_n.beaconscanner.features.beaconList.BeaconListActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.concurrent.TimeUnit;
@@ -54,9 +56,15 @@ public class MainMenu extends Activity {
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(finalI ==0) {
-                        Intent intent = new Intent(MainMenu.this, ClassifierActivity.class);
-                        startActivity(intent);
+                    switch (finalI)
+                    {
+                        case 0:
+
+                        startActivity(new Intent(MainMenu.this, ClassifierActivity.class));
+                        break;
+                        case 1:
+                         startActivity(new Intent(MainMenu.this, BeaconListActivity.class));
+                            break;
                     }
                 }
             });

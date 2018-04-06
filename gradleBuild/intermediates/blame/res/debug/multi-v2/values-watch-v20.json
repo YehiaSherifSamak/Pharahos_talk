@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-11.8.0.aar\\49f9a1c46dcd26f739398acefec8a26c\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-11.8.0.aar\\6490f53495455788e7d1e8644e098945\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

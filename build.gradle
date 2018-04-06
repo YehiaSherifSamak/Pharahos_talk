@@ -2,7 +2,7 @@
 // in Android Studio with Gradle.
 //
 // Note that Bazel is still used by default to compile the native libs,
-// and should be installed at the location noted below. This build file
+// and should be insted at the location noted below. This build file
 // automates the process of calling out to it and copying the compiled
 // libraries back into the appropriate directory.
 //
@@ -23,9 +23,10 @@ assert file(project.ext.ASSET_DIR + "/labels.txt").exists()
 
 buildscript {
     ext.kotlin_version = '1.2.31'
+
     repositories {
         jcenter()
-        google()
+      //  google()
 
         maven {
             url 'https://maven.fabric.io/public'
@@ -34,31 +35,90 @@ buildscript {
         maven { url "https://maven.google.com" }
     }
 
+
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.0'
         classpath 'com.google.gms:google-services:3.2.0'
         classpath 'io.fabric.tools:gradle:1.25.1'
+        //--------------------------------------------------------new Module
        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "io.realm:realm-gradle-plugin:4.1.0"
 
 
-
+        //classpath "com.jakewharton:butterknife:8.8.1"
+        //--------------------------------------------------------new Module
     }
 }
 
 
 apply plugin: 'com.android.application'
 
-
+//--------------------------------------------------------new Module
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+//kapt { generateStubs = true }
+apply plugin: 'realm-android'
+apply plugin: 'kotlin-android-extensions'
+//--------------------------------------------------------new Module
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId "org.tensorflow.demo"
+       applicationId "org.tensorflow.demo"
+
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 16
+       // versionName "2.1.2"
+     //   testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+
+
     lintOptions {
         abortOnError false
     }
+    //--------------------------------------------------------new Module
+    ext {
+        supportLibraryVersion = '27.0.2'
+
+    }
+    buildTypes {
+        customDebugType {
+            debuggable true
+
+        }
+    }
+  /* buildTypes {
+        release {
+            minifyEnabled true
+
+           //resValue "string", "app_name", "Pharaohs Talk"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+         //   signingConfig signingConfigs.release
+        }
+
+        preRelease {
+            minifyEnabled true
+               applicationIdSuffix = ".preRelease"
+            versionNameSuffix = "-preRelease"
+
+          //  resValue "string", "app_name", "Pharaohs Talk"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.release
+        }
+
+        debug {
+            minifyEnabled false
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-debug"
+
+            //resValue "string", "app_name", "Pharaohs Talk Navigation"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+*/
+//--------------------------------------------------------new Module
     packagingOptions {
         exclude "lib/armeabi/libbitmaps.so"
         exclude "lib/armeabi/libgifimage.so"
@@ -86,6 +146,7 @@ android {
                 srcDir 'src'
             }
 
+
             manifest.srcFile 'AndroidManifest.xml'
             resources.srcDirs = ['src']
             aidl.srcDirs = ['src']
@@ -95,26 +156,103 @@ android {
 
             repositories {
                 jcenter()
+                maven {
+                    url "https://maven.google.com"
+                }
+
 
             }
+        ////    main.java.srcDirs += 'src/main/kotlin'
 
             dependencies {
+
+                compile fileTree(dir: 'libs', include: ['*.jar'])
+                androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+                    exclude group: 'com.android.support', module: 'support-annotations'
+                })
+
                 compile 'org.tensorflow:tensorflow-android:1.5.0'
                 compile 'com.google.firebase:firebase-core:11.8.0'
-               // compile 'com.google.firebase:firebase-crash:11.8.0'
                 compile 'com.google.firebase:firebase-firestore:11.8.0'
                 compile 'com.google.firebase:firebase-database:11.8.0'
                 compile 'com.google.firebase:firebase-storage:11.8.0'
                 compile 'com.google.firebase:firebase-auth:11.8.0'
                 compile 'com.google.android.gms:play-services-auth:11.8.0'
                 compile 'com.google.android.gms:play-services-vision:11.8.0'
-                compile 'com.android.support:appcompat-v7:26+'
-                compile 'com.android.support:design:26+'
-                compile 'com.android.support:recyclerview-v7:26+'
-                compile 'com.android.support:cardview-v7:26+'
-                compile('com.crashlytics.sdk.android:crashlytics:2.9.0@aar') {
+                //compile 'com.android.support:appcompat-v7:27+'
+               // compile 'com.android.support:design:27+'
+              //  compile 'com.android.support:recyclerview-v7:27+'
+                //compile 'com.android.support:cardview-v7:27+'
+             compile('com.crashlytics.sdk.android:crashlytics:2.9.0@aar') {
                     transitive = true
+
                 }
+             ///   compile "com.android.support:support-core-utils-v7:${supportLibraryVersion}"
+                //--------------------------------------------------------new Module
+
+                //--------------------------------------------------------new Module
+                compile 'com.nightonke:boommenu:1.0.9'
+                compile 'com.cepheuen.elegant-number-button:lib:1.0.2'
+                //compile 'com.android.support:design:27.+'
+               // implementation "com.android.support:gridlayout-v7:${supportLibraryVersion}"
+                 //compile "com.android.support:gridlayout:${supportLibraryVersion}"
+
+
+
+                //--------------------------------------------------------new Module
+                testCompile 'junit:junit:4.12'
+                //noinspection GradleCompatible,GradleCompatible
+                compile "com.android.support:design:${supportLibraryVersion}"
+                compile "com.android.support:support-v4:${supportLibraryVersion}"
+                compile "com.android.support:appcompat-v7:${supportLibraryVersion}"
+                compile "com.android.support:recyclerview-v7:${supportLibraryVersion}"
+                compile "com.android.support:cardview-v7:${supportLibraryVersion}"
+
+                // Kotlin
+                compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+                // compile "org.jetbrains.kotlin:kotlin-reflect"
+                // ButterKnife
+                compile 'com.jakewharton:butterknife:8.8.1'
+                kapt 'com.jakewharton:butterknife-compiler:8.8.1'
+                //kapt 'com.jakewharton:butterknife-compiler:8.8.1'
+               // annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+                // Dagger 2
+                compile 'com.google.dagger:dagger:2.11'
+                kapt 'com.google.dagger:dagger-compiler:2.11'
+
+                // RxJava & RxAndroid
+                compile 'io.reactivex.rxjava2:rxjava:2.1.2'
+                compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+                compile 'com.jakewharton.rxrelay2:rxrelay:2.0.0'
+
+                // Retrofit & RxJava call adapters & Gson
+                compile 'com.squareup.retrofit2:retrofit:2.3.0'
+                compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+                compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+
+                compile 'com.google.code.gson:gson:2.8.1'
+                compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+//https://github.com/jsappme/react-native-firebase-starter/issues/13
+                // Realm adapters
+                compile 'io.realm:android-adapters:2.1.0'
+
+                // ALT Beacon library
+                compile 'org.altbeacon:android-beacon-library:2.12.1'
+
+                // Easy permissions
+                compile 'pub.devrel:easypermissions:0.4.3'
+
+                // Tap target view, discovery feature
+                compile 'com.getkeepsafe.taptargetview:taptargetview:1.10.0'
+
+                // Constraint Layout
+                compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+                // Material dialog
+                compile 'com.afollestad.material-dialogs:core:0.9.4.5'
+
+                //--------------------------------------------------------new Module
 
             }
 
@@ -123,29 +261,41 @@ android {
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
     }
+    //--------------------------------------------------------new Module
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.2'
+
+    }
+    //--------------------------------------------------------new Module
 }
+ext {
+    supportLibraryVersion = '27.0.2'
 
-
+}
 dependencies {
-    implementation 'com.android.support:appcompat-v7:26.+'
-    implementation 'com.android.support.constraint:constraint-layout:+'
-    implementation 'com.android.support:cardview-v7:26.1.0'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-
+    implementation "com.android.support:appcompat-v7:${supportLibraryVersion}"
+    //implementation "com.android.support.constraint:constraint-layout:${supportLibraryVersion}"
+    implementation "com.android.support:cardview-v7:${supportLibraryVersion}"
+    //implementation "com.android.support:gridlayout-v7:${supportLibraryVersion}"
+    //compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     //compile 'com.github.Hitomis:CircleMenu:v1.0.2'
-    compile 'com.nightonke:boommenu:1.0.9'
-    compile 'com.cepheuen.elegant-number-button:lib:1.0.2'
-    compile 'com.android.support:design:26.+'
-
-
-    implementation 'com.android.support:gridlayout-v7:26.1.0'
-    //    implementation project(':unitycam')
+    //    implementation project(':app')
+    implementation "com.android.support:support-v4:${supportLibraryVersion}"
+    implementation "com.google.dagger:dagger-android-support:2.11-rc2"
 }
 repositories {
-    google()
+   //google()
     maven { url 'https://maven.fabric.io/public' }
     mavenCentral()
-}
+    jcenter()
+    maven { url "https://maven.google.com" }
 
+}
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'io.fabric'
+/*task clean (type: Delete){
+    delete rootProject.buildDir
+}*/
+
+
+

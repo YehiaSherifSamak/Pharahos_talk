@@ -24,7 +24,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//import com.bridou_n.beaconscanner.features.beaconList.BeaconListActivity;
 import com.crashlytics.android.Crashlytics;
 import io.fabric.sdk.android.Fabric;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -32,7 +31,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-//import com.bridou_n.beaconscanner;
+
 public class SignIn extends Activity{
     Button loginButton;
     TextView registerButton;
@@ -48,12 +47,12 @@ public class SignIn extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
-        Fabric.with(this, new Crashlytics());
+       Fabric.with(this, new Crashlytics());
         loginButton = (Button) findViewById(R.id.signinButton);
         registerButton = (TextView) findViewById(R.id.signupTextView);
         emailEditText = (EditText) findViewById(R.id.emailEditText);
         passwordEditText = (EditText) findViewById(R.id.passwordEditText);
-     //   googleButton = (Button) findViewById(R.id.google_sign_in_button);
+        //googleButton = (Button) findViewById(R.id.google_sign_in_button);
         signUpButton = (Button) findViewById(R.id.signupButton);
         ImageView signinImageView = (ImageView) findViewById(R.id.signinImageView);
         signinImageView.setImageResource(R.drawable.photo1);

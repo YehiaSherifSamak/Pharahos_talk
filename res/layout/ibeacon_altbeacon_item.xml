@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/ibeaconBackground"
+
+    >
+
+    <!-- Proximity UUID -->
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/uuid_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tint="@color/iconColors"
+        />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/proximity_uuid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintLeft_toRightOf="@+id/uuid_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/uuid_icon"
+        app:layout_constraintBottom_toBottomOf="@id/uuid_icon"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/cardPropertyColor"
+        tools:text="UUID • 39e328af-7665-4dd6-8116-cef685f25ecb"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/middle_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:id="@+id/room_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:textStyle="bold|normal"
+            android:id="@+id/roomnumber"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/cardPropertyColor"
+            tools:text="this is room ...." />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

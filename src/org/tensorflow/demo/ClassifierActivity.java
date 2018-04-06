@@ -285,7 +285,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                           final String firstItemName = firstItemInTheResultList.getTitle();
                           double firstItemAcc = firstItemInTheResultList.getConfidence();
                           if((!firstItemName.equals("chairs") && !firstItemName.equals("floors")&& !firstItemName.equals("humans")&&
-                          !firstItemName.equals("tables")&& !firstItemName.equals("walls"))  && firstItemAcc >= 0.70)
+                          !firstItemName.equals("tables")&& !firstItemName.equals("walls"))  && firstItemAcc >= 0.85)
                           {
                               seen = true;
                               switch (firstItemName)

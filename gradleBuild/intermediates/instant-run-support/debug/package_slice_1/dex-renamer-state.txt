@@ -1,4 +1,0 @@
-#Sat Mar 31 17:35:37 EET 2018
-base.0=C\:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\transforms\\dexMerger\\debug\\2
-path.0=classes.dex
-renamed.0=classes.dex

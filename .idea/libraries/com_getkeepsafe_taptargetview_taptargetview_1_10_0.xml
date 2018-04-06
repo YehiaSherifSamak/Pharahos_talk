@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.getkeepsafe.taptargetview:taptargetview-1.10.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/taptargetview-1.10.0.aar/14f2e01f3319451097c2545bbe3050e6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/taptargetview-1.10.0.aar/14f2e01f3319451097c2545bbe3050e6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/taptargetview-1.10.0.aar/2a43971b40c711fea2fd2c2c1ac43089/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/taptargetview-1.10.0.aar/2a43971b40c711fea2fd2c2c1ac43089/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

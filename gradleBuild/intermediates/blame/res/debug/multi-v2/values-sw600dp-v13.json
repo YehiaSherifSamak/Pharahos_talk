@@ -4,6 +4,23 @@
             "outputFile": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\core-0.9.4.5.aar\\8ba2674d1f29d37d31cc6665a65c341d\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,97",
+                        "endColumns": "41,51",
+                        "endOffsets": "92,144"
+                    },
+                    "to": {
+                        "startLines": "2,20",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,1280",
+                        "endColumns": "41,51",
+                        "endOffsets": "92,1327"
+                    }
+                },
+                {
                     "source": "C:\\Users\\yahya\\AndroidStudioProjects\\tfmobile\\res\\values-sw600dp\\template-dimens.xml",
                     "from": {
                         "startLines": "20,21",
@@ -13,21 +30,28 @@
                         "endOffsets": "732,800"
                     },
                     "to": {
-                        "startLines": "18,19",
+                        "startLines": "19,21",
                         "startColumns": "4,4",
-                        "startOffsets": "1170,1238",
+                        "startOffsets": "1212,1332",
                         "endColumns": "67,67",
-                        "endOffsets": "1233,1301"
+                        "endOffsets": "1275,1395"
                     }
                 },
                 {
-                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\13263b22abc66aca294e1c5535e300f4\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\5a2068cc252e01adfdc40349fe75e3bc\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
                         "startOffsets": "55,124,193,263,337,413,472,543",
                         "endColumns": "68,68,69,73,75,58,70,67",
                         "endOffsets": "119,188,258,332,408,467,538,606"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "97,166,235,305,379,455,514,585",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "161,230,300,374,450,509,580,648"
                     }
                 },
                 {
@@ -41,16 +65,16 @@
                         "endOffsets": "874"
                     },
                     "to": {
-                        "startLines": "25",
+                        "startLines": "27",
                         "startColumns": "4",
-                        "startOffsets": "1551",
-                        "endLines": "29",
+                        "startOffsets": "1645",
+                        "endLines": "31",
                         "endColumns": "12",
-                        "endOffsets": "1791"
+                        "endOffsets": "1885"
                     }
                 },
                 {
-                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\30289009e8007233cc145e8d2dde2292\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\yahya\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\08fb54338026d1a2385db4492802fb65\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -60,12 +84,12 @@
                         "endOffsets": "110,180,251,323,381,439,545,609,672,854"
                     },
                     "to": {
-                        "startLines": "10,11,12,13,14,15,16,17,20,21",
+                        "startLines": "11,12,13,14,15,16,17,18,22,23",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "611,671,741,812,884,942,1000,1106,1306,1369",
-                        "endLines": "10,11,12,13,14,15,16,17,20,24",
+                        "startOffsets": "653,713,783,854,926,984,1042,1148,1400,1463",
+                        "endLines": "11,12,13,14,15,16,17,18,22,26",
                         "endColumns": "59,69,70,71,57,57,105,63,62,12",
-                        "endOffsets": "666,736,807,879,937,995,1101,1165,1364,1546"
+                        "endOffsets": "708,778,849,921,979,1037,1143,1207,1458,1640"
                     }
                 }
             ]
