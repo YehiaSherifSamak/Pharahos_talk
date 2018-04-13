@@ -15,18 +15,18 @@
  limitations under the License.
 -->
 <resources>
+    <!-- conflict  commented TF mobile colors
+
+     <color name="colorPrimary">#3F51B5</color>
+     <color name="colorPrimaryDark">#303F9F</color>
+     <color name="colorAccent">#FF4081</color>
+      -->
+     <color name="colorPrimary">#33B5E5</color>
+     <color name="colorPrimaryDark">#33B5E5</color>
+     <color name="colorAccent">#33B5E5</color>
+
+
     <color name="control_background">#cc4285f4</color>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <!-- conflict  commented beacon colors
-
-    <color name="colorPrimary">#33B5E5</color>
-    <color name="colorPrimaryDark">#33B5E5</color>
-    <color name="colorAccent">#33B5E5</color>
-
-    -->
-
     <!--  /////////////////////////////////-->
     <color name="colorPrimaryLight">#33B5E5</color>
     <color name="primaryText">#212121</color>

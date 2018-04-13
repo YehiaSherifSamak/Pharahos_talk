@@ -1,10 +1,12 @@
 hatshepsut
 ikhnaton
+mouses
 nefertiti
 ramsis
 sphinx
 tutankhamun
 chairs
+cups
 floors
 humans
 tables

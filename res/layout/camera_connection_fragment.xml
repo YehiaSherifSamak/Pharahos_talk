@@ -33,19 +33,6 @@
         android:layout_height="112dp"
         android:layout_alignParentTop="true" />-->
 
-    <Button
-        android:id="@+id/unityTravelButton"
-        android:visibility="invisible"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="51dp"
-        android:textColor="#b38006"
-        android:background="@drawable/darkbutton"
-         />
-
-
 
     <ImageView
         android:id="@+id/upperImageView"
@@ -58,13 +45,22 @@
         app:srcCompat="@drawable/ic_launcher" />
 
     <ImageView
-        android:id="@+id/arrowImageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_above="@+id/unityTravelButton"
+        android:id="@+id/infoImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="76dp"
-        android:layout_marginStart="19dp"
-        app:srcCompat="@drawable/gooldold" />
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/icon" />
+
+    <ImageView
+        android:id="@+id/aRImageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/infoImageButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/ar" />
+
 
 </RelativeLayout>

@@ -10,12 +10,12 @@
     <ImageView
         android:id="@+id/signupImageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="254dp"
-        app:srcCompat="@drawable/photo1" />
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="70dp"
+        app:srcCompat="@drawable/pharaohs" />
 
     <EditText
         android:id="@+id/email"

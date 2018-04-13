@@ -48,6 +48,7 @@ import com.getkeepsafe.taptargetview.TapTargetSequence
 import io.realm.Realm
 import io.realm.RealmResults
 import org.altbeacon.beacon.BeaconConsumer
+import org.tensorflow.demo.MainMenu
 import pub.devrel.easypermissions.EasyPermissions
 import javax.inject.Inject
 
@@ -325,4 +326,13 @@ class BeaconListActivity : AppCompatActivity(), BeaconListContract.View, BeaconC
         presenter.clear()
         super.onDestroy()
     }
+    override fun onBackPressed() {
+
+      //  super.onBackPressed()
+    val intent = Intent(this, MainMenu::class.java);
+        startActivity(intent);
+
+    }
+
+
 }

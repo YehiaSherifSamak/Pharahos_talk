@@ -30,7 +30,7 @@ public class MainMenu extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         ImageView mainMenuImageView = (ImageView) findViewById(R.id.mainMenuImageView);
-        mainMenuImageView.setImageResource(R.drawable.photo1);
+        mainMenuImageView.setImageResource(R.drawable.pharaohs);
        /* explore=(Button)findViewById(R.id.explore);
         explore.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,22 +40,49 @@ public class MainMenu extends Activity {
 
             }
         })*/
+        gridLayout=(GridLayout)findViewById(R.id.gridlayout);
+       for(int i=0;i<gridLayout.getChildCount();i++) {
+            final CardView cardView = (CardView) gridLayout.getChildAt(i);
 
-       gridLayout=(GridLayout)findViewById(R.id.gridlayout);
+                        cardView.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
+        }
+
        setSingleEvent(gridLayout);
+
+     //setToggleEvent(gridLayout);
 
 
     }
 
+  /*  private void setToggleEvent(GridLayout gridLayout) {
+
+        for(int i=0;i<gridLayout.getChildCount();i++) {
+            final CardView cardView = (CardView) gridLayout.getChildAt(i);
+            cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(cardView.getCardBackgroundColor().getDefaultColor()==(Color.parseColor("#FFFFFF")))
+                        cardView.setCardBackgroundColor(Color.parseColor("#808080"));
+                    else
+                        cardView.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
+                }
+            });
+        }
+    }
+*/
     private void setSingleEvent(GridLayout gridLayout) {
 
         for(int i=0;i<gridLayout.getChildCount();i++)
         {
-            CardView cardView=(CardView)gridLayout.getChildAt(i);
+           final CardView cardView=(CardView)gridLayout.getChildAt(i);
             final int finalI = i;
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    if(cardView.getCardBackgroundColor().getDefaultColor()==(Color.parseColor("#FFFFFF")))
+                        cardView.setCardBackgroundColor(Color.parseColor("#808080"));
+                    else
+                        cardView.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
                     switch (finalI)
                     {
                         case 0:
@@ -63,6 +90,7 @@ public class MainMenu extends Activity {
                         startActivity(new Intent(MainMenu.this, ClassifierActivity.class));
                         break;
                         case 1:
+
                          startActivity(new Intent(MainMenu.this, BeaconListActivity.class));
                             break;
                     }

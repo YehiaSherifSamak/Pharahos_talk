@@ -55,7 +55,7 @@ public class SignIn extends Activity{
         //googleButton = (Button) findViewById(R.id.google_sign_in_button);
         signUpButton = (Button) findViewById(R.id.signupButton);
         ImageView signinImageView = (ImageView) findViewById(R.id.signinImageView);
-        signinImageView.setImageResource(R.drawable.photo1);
+        signinImageView.setImageResource(R.drawable.pharaohs);
         signUpButton.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v)

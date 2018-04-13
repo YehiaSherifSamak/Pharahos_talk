@@ -1,6 +1,7 @@
 package org.tensorflow.demo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -72,5 +73,12 @@ public class Info extends AppCompatActivity {
                 collapsingToolbarLayout.setTitle("Tout Ankh Amoun");
                 break;
         }
+    }
+    @Override
+    public void onBackPressed()
+    {
+
+        Intent backIntent = new Intent(Info.this, ClassifierActivity.class);
+        startActivity(backIntent);
     }
 }

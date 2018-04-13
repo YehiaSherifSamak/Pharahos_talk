@@ -75,19 +75,28 @@
             android:name="org.tensorflow.demo.ClassifierActivity"
             android:label="@string/activity_name_classification"
             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="org.tensorflow.demo.ClassifierActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         <activity
             android:name="org.tensorflow.demo.SignIn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.tensorflow.demo.SignUp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.tensorflow.demo.FirstPage"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="org.tensorflow.demo.SignUp"
-            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="org.tensorflow.demo.Info"

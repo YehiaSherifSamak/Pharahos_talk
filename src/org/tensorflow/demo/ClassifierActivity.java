@@ -30,6 +30,7 @@ import android.media.ImageReader.OnImageAvailableListener;
 import android.os.Handler;
 import android.os.SystemClock;
 import android.os.Trace;
+import android.support.design.widget.FloatingActionButton;
 import android.util.DisplayMetrics;
 import android.util.Size;
 import android.util.TypedValue;
@@ -276,8 +277,10 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                       ImageView upperImageView;
                       upperImageView = (ImageView) findViewById(R.id.upperImageView) ;
                       Iterator resultsListIterator = results.iterator();
-                      Button unityTravelButton = (Button) findViewById(R.id.unityTravelButton);
-                      ImageView arrowImageView = (ImageView) findViewById(R.id.arrowImageView);
+                     // Button unityTravelButton = (Button) findViewById(R.id.unityTravelButton);
+                      ImageView infoImageView = (ImageView)findViewById(R.id.infoImageButton);
+                      ImageView aRImageView = (ImageView)findViewById(R.id.aRImageButton);
+                    //  ImageView arrowImageView = (ImageView) findViewById(R.id.arrowImageView);
                       if(resultsListIterator.hasNext())
                       {
 
@@ -285,38 +288,46 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                           final String firstItemName = firstItemInTheResultList.getTitle();
                           double firstItemAcc = firstItemInTheResultList.getConfidence();
                           if((!firstItemName.equals("chairs") && !firstItemName.equals("floors")&& !firstItemName.equals("humans")&&
-                          !firstItemName.equals("tables")&& !firstItemName.equals("walls"))  && firstItemAcc >= 0.85)
-                          {
-                              seen = true;
-                              switch (firstItemName)
+                          !firstItemName.equals("tables")&& !firstItemName.equals("walls") && !firstItemName.equals("cups")&& !firstItemName.equals("mouses"))
+                                  && firstItemAcc >= 0.9)
                               {
-                                  case "tutankhamun":
-                                      upperImageView.setImageResource(R.drawable.tutankamoun);
-                                      break;
-                                  case "nefertiti":
-                                      upperImageView.setImageResource(R.drawable.nefdark);
-                                      break;
-                                  case "sphinx":
-                                      upperImageView.setImageResource(R.drawable.sphinixdark);
-                                      break;
-                                  case "ramsis":
-                                      upperImageView.setImageResource(R.drawable.ramsisd);
-                                      break;
-                                  case "ikhnaton":
-                                      upperImageView.setImageResource(R.drawable.ikhnatondark);
+                                  switch (firstItemName)
+                                  {
+                                      case "tutankhamun":
+                                          upperImageView.setImageResource(R.drawable.tutankamoun);
+                                          break;
+                                      case "nefertiti":
+                                          upperImageView.setImageResource(R.drawable.nefdark);
+                                          break;
+                                      case "secondnefertiti":
+                                          upperImageView.setImageResource(R.drawable.nefdark);
+                                          break;
+                                      case "sphinx":
+                                          upperImageView.setImageResource(R.drawable.sphinixdark);
+                                          break;
+                                      case "ramsis":
+                                          upperImageView.setImageResource(R.drawable.ramsisd);
+                                          break;
+                                      case "ikhnaton":
+                                          upperImageView.setImageResource(R.drawable.ikhnatondark);
 
-                                      break;
-                                  case "hatshepsut":
-                                      upperImageView.setImageResource(R.drawable.hatshepsutdark);
-                                    break;
-                                  default:
-                                      break;
-                              }
+                                          break;
+                                      case "hatshepsut":
+                                          upperImageView.setImageResource(R.drawable.hatshepsutdark);
+                                          break;
+                                      default:
+                                          break;
+                                  }
+
                               upperImageView.setVisibility(View.VISIBLE);
-                              unityTravelButton.setText("Swipe to Travel Back in Time");
-                              unityTravelButton.setVisibility(View.VISIBLE);
-                              arrowImageView.setImageResource(R.drawable.gooldold);
-                              arrowImageView.setVisibility(View.VISIBLE);
+                              //unityTravelButton.setText("Swipe to Travel Back in Time");
+                             // unityTravelButton.setVisibility(View.VISIBLE);
+                                  infoImageView.setVisibility(View.VISIBLE);
+                                  aRImageView.setVisibility(View.VISIBLE);
+                                  infoImageView.setImageResource(R.drawable.icon);
+                                  aRImageView.setImageResource(R.drawable.ar);
+                             //* arrowImageView.setImageResource(R.drawable.gooldold);
+                           //   arrowImageView.setVisibility(View.VISIBLE);
                               cameraConnectionRelativeLayout.setOnTouchListener(new OnSwipeTouchListener(ClassifierActivity.this)
                               {
                                   public void onSwipeRight() {
@@ -329,8 +340,12 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                                       startActivity(infoIntent);
 
                                   }
+                                  public void onSwipeLeft()
+                                  {
+                                      startActivity(new Intent("com.yahya.PharohsTaking.nef"));
+                                  }
                               });
-                              unityTravelButton.setOnClickListener(new View.OnClickListener() {
+                              infoImageView.setOnClickListener(new View.OnClickListener() {
                                   @Override
                                   public void onClick(View v) {
                                       Intent infoIntent = new Intent(ClassifierActivity.this, Info.class);
@@ -339,8 +354,25 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                                       startActivity(infoIntent);
                                   }
                               });
+                                  aRImageView.setOnClickListener(new View.OnClickListener() {
+                                      @Override
+                                      public void onClick(View v) {
+                                          startActivity(new Intent("com.yahya.PharohsTaking.nef"));
+                                      }
+                                  });
 
-                              if(seenInt != 1) {
+
+                             /* unityTravelButton.setOnClickListener(new View.OnClickListener() {
+                                  @Override
+                                  public void onClick(View v) {
+                                      Intent infoIntent = new Intent(ClassifierActivity.this, Info.class);
+                                      infoIntent.putExtra("Monument_name", firstItemName);
+
+                                      startActivity(infoIntent);
+                                  }
+                              });*/
+
+                             if(seenInt != 1) {
 
                                   TranslateAnimation animation = new TranslateAnimation(0.0f, 500.0f,
                                           300.0f, 300.0f);          //  new TranslateAnimation(xFrom,xTo, yFrom,yTo)
@@ -349,7 +381,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
 
                                   //  animation.setRepeatMode(2);   // repeat animation (left to right, right to left )
                                   //animation.setFillAfter(true);
-                                  arrowImageView.startAnimation(animation);
+                                //  arrowImageView.startAnimation(animation);
 
                               }
 
@@ -358,36 +390,27 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                           }
                           else
                           {
-                              unityTravelButton.setVisibility(View.GONE);
+                              //unityTravelButton.setVisibility(View.GONE);
                               upperImageView.setVisibility(View.GONE);
-                              arrowImageView.setVisibility(View.GONE);
-                              arrowImageView.clearAnimation();
+                              //arrowImageView.setVisibility(View.GONE);
+                           //   arrowImageView.clearAnimation();
+                              infoImageView.setVisibility(View.GONE);
+                              aRImageView.setVisibility(View.GONE);
                               seen = false;
                               seenInt=-1;
-                              cameraConnectionRelativeLayout.setOnTouchListener(new OnSwipeTouchListener(ClassifierActivity.this)
-                              {
-                                  public void onSwipeRight() {
-
-                                      Toast.makeText(ClassifierActivity.this, "left", Toast.LENGTH_SHORT).show();
-                                  }
-                              });
 
                           }
                       }
                       else
                       {
-                          unityTravelButton.setVisibility(View.GONE);
+                         // unityTravelButton.setVisibility(View.GONE);
                           upperImageView.setVisibility(View.GONE);
-                          arrowImageView.setVisibility(View.GONE);
+                          //arrowImageView.setVisibility(View.GONE);
+                          infoImageView.setVisibility(View.GONE);
+                              aRImageView.setVisibility(View.GONE);
                           seen = false;
                           seenInt = -1;
-                          cameraConnectionRelativeLayout.setOnTouchListener(new OnSwipeTouchListener(ClassifierActivity.this)
-                          {
-                              public void onSwipeRight() {
 
-                                  Toast.makeText(ClassifierActivity.this, "left", Toast.LENGTH_SHORT).show();
-                              }
-                          });
 
                       }
 
