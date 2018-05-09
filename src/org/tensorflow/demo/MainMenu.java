@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import org.tensorflow.Test;
 import org.tensorflow.demo.features.beaconList.BeaconListActivity;
 
 //import com.bridou_n.beaconscanner.features.beaconList.BeaconListActivity;
@@ -30,7 +32,7 @@ public class MainMenu extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         ImageView mainMenuImageView = (ImageView) findViewById(R.id.mainMenuImageView);
-        mainMenuImageView.setImageResource(R.drawable.pharaohs);
+        mainMenuImageView.setImageResource(R.drawable.samak_abyad_2);
        /* explore=(Button)findViewById(R.id.explore);
         explore.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +94,9 @@ public class MainMenu extends Activity {
                         case 1:
 
                          startActivity(new Intent(MainMenu.this, BeaconListActivity.class));
+                            break;
+                        case 2:
+                            startActivity(new Intent(MainMenu.this, Test.class));
                             break;
                     }
                 }

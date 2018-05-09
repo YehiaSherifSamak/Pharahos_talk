@@ -51,6 +51,11 @@ import org.altbeacon.beacon.BeaconConsumer
 import org.tensorflow.demo.MainMenu
 import pub.devrel.easypermissions.EasyPermissions
 import javax.inject.Inject
+import java.util.Calendar.*
+import org.tensorflow.demo.utils.extensionFunctions.getBeaconsScannedAfter
+import android.widget.Toast
+import kotlinx.android.synthetic.main.beacon_item.*
+import org.tensorflow.demo.SearchActivity
 
 class BeaconListActivity : AppCompatActivity(), BeaconListContract.View, BeaconConsumer, EasyPermissions.PermissionCallbacks {
     override fun showRating(step: Int, show: Boolean) {
@@ -89,7 +94,7 @@ class BeaconListActivity : AppCompatActivity(), BeaconListContract.View, BeaconC
     @BindView(R.id.bottom_sheet) lateinit var bottomSheet: NestedScrollView
 
     @BindView(R.id.scan_fab) lateinit var scanFab: FloatingActionButton
-   // @BindView(R.id.search_fab) lateinit var searchFab: FloatingActionButton
+    @BindView(R.id.search_fab) lateinit var searchFab: FloatingActionButton
     private var dialog: MaterialDialog? = null
     private var menu: Menu? = null
     private var bsBehavior: BottomSheetBehavior<NestedScrollView>? = null
@@ -109,6 +114,31 @@ class BeaconListActivity : AppCompatActivity(), BeaconListContract.View, BeaconC
         if (rvAnimator is SimpleItemAnimator) {
             rvAnimator.supportsChangeAnimations = false
         }
+        //-------------------------------------------------------------------------------------------------------- my code
+
+        searchFab.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, SearchActivity::class.java)
+            val cal = getInstance()
+            cal.add(MINUTE, -5);
+            val x = realm.getBeaconsScannedAfter(cal.timeInMillis)
+            if(x.toString().equals("[]"))
+            {
+                Toast.makeText(this,"please refersh", Toast.LENGTH_LONG).show()
+                //   scanFab.setBackgroundColor(R.color.bgMoreInfo)
+                // searchFab.visibility = View.INVISIBLE;
+            }
+            else
+
+            {
+                i.putExtra("room", x.first()!!.ibeaconData!!.minor)
+               startActivity(i)
+
+              //  searchFab.setBackgroundColor(R.color.bgMoreInfo)
+               // searchFab.visibility = View.VISIBLE;
+            }
+            // startActivity(i)
+        })
+        //---------------------------------------------------------------------------------------------------------
 
         bsBehavior = BottomSheetBehavior.from(bottomSheet)
 
@@ -162,10 +192,12 @@ class BeaconListActivity : AppCompatActivity(), BeaconListContract.View, BeaconC
     }
 
     override fun setAdapter(beaconResults: RealmResults<BeaconSaved>) {
+
         beaconsRv.adapter = BeaconsRecyclerViewAdapter(beaconResults, this, object : BeaconsRecyclerViewAdapter.OnControlsOpen {
             override fun onOpenControls(beacon: BeaconSaved) {
-                val bsDialog = ControlsBottomSheetDialog.newInstance(beacon)
-                bsDialog.show(supportFragmentManager, bsDialog.tag)
+
+                    val bsDialog = ControlsBottomSheetDialog.newInstance(beacon)
+                    bsDialog.show(supportFragmentManager, bsDialog.tag)
             }
         })
     }
@@ -332,6 +364,15 @@ class BeaconListActivity : AppCompatActivity(), BeaconListContract.View, BeaconC
     val intent = Intent(this, MainMenu::class.java);
         startActivity(intent);
 
+    }
+    fun checkFirst(beacon: BeaconSaved, list:RealmResults<BeaconSaved>):Boolean
+    {
+        for(b:BeaconSaved in list)
+        {
+            if(beacon.distance > b.distance)
+                return false;
+        }
+        return true;
     }
 
 

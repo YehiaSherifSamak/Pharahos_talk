@@ -294,26 +294,26 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                                   switch (firstItemName)
                                   {
                                       case "tutankhamun":
-                                          upperImageView.setImageResource(R.drawable.tutankamoun);
+                                          upperImageView.setImageResource(R.drawable.tttouttttt);
                                           break;
                                       case "nefertiti":
-                                          upperImageView.setImageResource(R.drawable.nefdark);
+                                          upperImageView.setImageResource(R.drawable.nnnnneffffff);
                                           break;
                                       case "secondnefertiti":
-                                          upperImageView.setImageResource(R.drawable.nefdark);
+                                          upperImageView.setImageResource(R.drawable.nnnnneffffff);
                                           break;
                                       case "sphinx":
-                                          upperImageView.setImageResource(R.drawable.sphinixdark);
+                                          upperImageView.setImageResource(R.drawable.ssssphix);
                                           break;
                                       case "ramsis":
                                           upperImageView.setImageResource(R.drawable.ramsisd);
                                           break;
                                       case "ikhnaton":
-                                          upperImageView.setImageResource(R.drawable.ikhnatondark);
+                                          upperImageView.setImageResource(R.drawable.iiiiiiiiknaton);
 
                                           break;
                                       case "hatshepsut":
-                                          upperImageView.setImageResource(R.drawable.hatshepsutdark);
+                                          upperImageView.setImageResource(R.drawable.hhhhhhatsh);
                                           break;
                                       default:
                                           break;

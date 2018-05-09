@@ -46,14 +46,14 @@ class BeaconsRecyclerViewAdapter(val data: RealmResults<BeaconSaved>,
         // Included layouts
         @BindView(R.id.ibeacon_altbeacon_item) lateinit var iBeaconLayout: View
         protected var beaconDisplayed: BeaconSaved? = null
-        val a: Int = 1
+        val a: Int = 3
         var s: String = a.toString()
 
-        val b: Int = 2
+        val b: Int = 4
         var c: String = b.toString()
 
 
-        open fun bindView(beacon: BeaconSaved) {
+        open fun bindView(beacon: BeaconSaved, list:RealmResults<BeaconSaved>) {
             beaconDisplayed = beacon
 
             address.text = ""
@@ -63,7 +63,7 @@ class BeaconsRecyclerViewAdapter(val data: RealmResults<BeaconSaved>,
 
             rssi.text = ""
             tx.text = ""
-
+           // val checkii = checkFirst(beacon, data)
             val telemetry = beacon.telemetryData
             if (telemetry != null) {
                 tlmData.forEach { it.visibility = View.VISIBLE }
@@ -100,33 +100,57 @@ class BeaconsRecyclerViewAdapter(val data: RealmResults<BeaconSaved>,
             ButterKnife.bind(this, itemView)
         }
 
-        override fun bindView(beacon: BeaconSaved) {
-            super.bindView(beacon)
-
-            cardView.setCardBackgroundColor(ContextCompat.getColor(ctx, R.color.ibeaconBackground))
-            hideAllLayouts()
-            iBeaconLayout.visibility = View.VISIBLE
-
-            beaconType.text = ""
-
-            val ibeaconData = beacon.ibeaconData
-            if (ibeaconData != null) {
-                proximityUUID.text = ""
-               // major.text = ""
-               // minor.text = ""
-
-                if(ibeaconData.minor==s){
-                    fun Context.toast(message: CharSequence) =
-                            Toast.makeText(this, "ROOM 2", Toast.LENGTH_LONG).show()
-
-                    roomnum.text=String.format("This is Room 1")
-
+        override fun bindView(beacon: BeaconSaved, list: RealmResults<BeaconSaved>) {
+            super.bindView(beacon, list)
+            var checki = false
+            for(b:BeaconSaved in list)
+            {
+                if(beacon.distance <= b.distance)
+                {
+                    checki = true
+                    break
                 }
-                else if(ibeaconData.minor==c){
-                    fun Context.toast(message: CharSequence) =
-                            Toast.makeText(this, "ROOM 2", Toast.LENGTH_LONG).show()
+            }
+            //checki  =  true
+            if(checki) {
+                cardView.setCardBackgroundColor(ContextCompat.getColor(ctx, R.color.ibeaconBackground))
+                hideAllLayouts()
 
-                    roomnum.text=String.format("THIS IS TUTANKHAMON ROOM ")
+                iBeaconLayout.visibility = View.VISIBLE
+                beaconType.text = ""
+
+                val ibeaconData = beacon.ibeaconData
+                if (ibeaconData != null) {
+                    proximityUUID.text = ""
+                    // major.text = ""
+                    // minor.text = ""
+
+                    if(ibeaconData.minor==1.toString()){
+                        /*fun Context.toast(message: CharSequence) =
+                                Toast.makeText(this, "ROOM 2", Toast.LENGTH_LONG).show()*/
+
+                        roomnum.text=String.format("Entrance Hall")
+
+                    }
+                    else if(ibeaconData.minor==2.toString()){
+                        /*   fun Context.toast(message: CharSequence) =
+                                   Toast.makeText(this, "ROOM 2", Toast.LENGTH_LONG).show()-*/
+
+                        roomnum.text=String.format("Corridor")
+
+                    }
+                    else if(ibeaconData.minor==4.toString()){
+                        /*   fun Context.toast(message: CharSequence) =
+                                   Toast.makeText(this, "ROOM 2", Toast.LENGTH_LONG).show()-*/
+
+                        roomnum.text=String.format("Exit Hall")
+            }
+            else
+            {
+                cardView.visibility = View.INVISIBLE
+                iBeaconLayout.visibility = View.INVISIBLE
+            }
+
 
                 }
             }
@@ -151,7 +175,7 @@ class BeaconsRecyclerViewAdapter(val data: RealmResults<BeaconSaved>,
             else -> return R.layout.ibeacon_altbeacon_item
         }
     }
-
+//bos dih
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseHolder {
         // The actual layout file to inflate
         val layout = if (viewType == R.layout.footer_item) viewType else R.layout.beacon_item
@@ -168,12 +192,21 @@ class BeaconsRecyclerViewAdapter(val data: RealmResults<BeaconSaved>,
             val beacon = getItem(position)
 
             if (beacon != null) {
-                holder.bindView(beacon)
+                holder.bindView(beacon, data)
             }
         }
     }
 
     interface OnControlsOpen {
         fun onOpenControls(beacon: BeaconSaved)
+    }
+    fun checkFirst(beacon: BeaconSaved, list:RealmResults<BeaconSaved>):Boolean
+    {
+        for(b:BeaconSaved in list)
+        {
+            if(beacon.distance > b.distance)
+                return false
+        }
+        return true
     }
 }

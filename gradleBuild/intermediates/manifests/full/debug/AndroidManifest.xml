@@ -66,7 +66,7 @@
         android:name="org.tensorflow.demo.AppSingleton"
         android:allowBackup="true"
         android:debuggable="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/logomalob"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:testOnly="true"
@@ -108,9 +108,17 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name="org.tensorflow.demo.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
             android:name="org.tensorflow.demo.features.beaconList.BeaconListActivity"
             android:theme="@style/SplashTheme" >
         </activity>
+        <activity
+            android:name="org.tensorflow.demo.GuideActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
         <activity
             android:name="org.tensorflow.demo.features.settings.SettingsActivity"
             android:theme="@style/AppThemeNoActionBar" />

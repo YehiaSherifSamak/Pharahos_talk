@@ -93,7 +93,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/no_scanned_beacons_yet"
+                android:text=""
                 android:id="@+id/empty_state_title"
                 android:textColor="@color/primaryText"
                 android:layout_below="@+id/error_image"
@@ -104,7 +104,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/empty_state_content"
+                android:text=""
                 android:id="@+id/empty_state_content"
                 android:layout_below="@+id/empty_state_title"
                 android:layout_centerHorizontal="true"
@@ -140,7 +140,7 @@
         app:srcCompat="@drawable/play_icon"
         app:fabSize="normal" />
 
- <!--   <android.support.design.widget.FloatingActionButton
+  <android.support.design.widget.FloatingActionButton
         android:id="@+id/search_fab"
         android:backgroundTint="@color/colorPauseFab"
         android:layout_width="wrap_content"
@@ -150,6 +150,6 @@
         app:layout_anchor="@id/bottom_sheet"
         app:layout_anchorGravity="top"
         app:srcCompat="@drawable/ic_location_24dp"
-        app:fabSize="normal" />-->
+        app:fabSize="normal" />
 
 </android.support.design.widget.CoordinatorLayout>

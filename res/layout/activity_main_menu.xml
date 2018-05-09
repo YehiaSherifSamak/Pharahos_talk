@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="226dp"
         android:fontFamily="sans-serif"
-        android:text="Main Menu"
+        android:text=""
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -188,7 +188,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/gridlayout"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="25dp"
-        app:srcCompat="@drawable/pharaohs" />
+        android:layout_marginBottom="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/samak_abyad_2" />
 
 </RelativeLayout>

@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-105:12
-INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-105:12
-INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-105:12
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
 MERGED from [io.realm:realm-android-library:4.1.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\realm-android-library-4.1.0.aar\be09c573fde6e7399ac459cbb62cde2f\AndroidManifest.xml:2:1-11:12
 MERGED from [org.tensorflow:tensorflow-android:1.5.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.5.0.aar\19a60677dbf16e6816862610336b48e4\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\29fd537911351a065d1468e3d39bb37a\AndroidManifest.xml:2:1-6:12
@@ -74,8 +74,8 @@ MERGED from [com.google.android.gms:play-services-vision-common-license:11.8.0] 
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\2ecf85c833e3accf15288c00b1e917ed\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\b56988d0c984c817aae556cbe172bb33\AndroidManifest.xml:2:1-6:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\814b2ec90968841eb48ababfd42e79c3\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-105:12
-INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-105:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
 	package
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:18:5-34
 		INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml
@@ -84,7 +84,7 @@ INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:17:5-51
 	android:versionCode
 		INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml
-		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-105:12
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
 		INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:11-69
@@ -303,7 +303,7 @@ ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:40:
 	android:name
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:40:16-70
 application
-ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:44:5-102:19
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:44:5-110:19
 MERGED from [org.tensorflow:tensorflow-android:1.5.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.5.0.aar\19a60677dbf16e6816862610336b48e4\AndroidManifest.xml:5:5-6:19
 MERGED from [org.tensorflow:tensorflow-android:1.5.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.5.0.aar\19a60677dbf16e6816862610336b48e4\AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\29fd537911351a065d1468e3d39bb37a\AndroidManifest.xml:5:5-20
@@ -393,7 +393,7 @@ MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yahya\.gr
 	android:debuggable
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:47:9-34
 	android:icon
-		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:48:9-45
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:48:9-43
 		REJECTED from [com.cepheuen.elegant-number-button:lib:1.0.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\lib-1.0.2.aar\aaf4df3023975181b47b6501699d85ec\AndroidManifest.xml:13:9-43
 	android:allowBackup
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:46:9-35
@@ -464,18 +464,32 @@ ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:88:
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:89:13-49
 	android:name
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:88:19-62
-activity#org.tensorflow.demo.features.beaconList.BeaconListActivity
+activity#org.tensorflow.demo.SearchActivity
 ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:91:9-95:20
+	android:screenOrientation
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:93:13-49
 	android:theme
-		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:93:13-47
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:92:13-69
 	android:name
-		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:92:13-67
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:91:19-68
+activity#org.tensorflow.demo.features.beaconList.BeaconListActivity
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:96:9-100:20
+	android:theme
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:98:13-47
+	android:name
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:97:13-67
+activity#org.tensorflow.demo.GuideActivity
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:101:9-102:69
+	android:theme
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:102:13-57
+	android:name
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:101:19-48
 activity#org.tensorflow.demo.features.settings.SettingsActivity
-ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:96:9-99:58
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:104:9-107:58
 	android:theme
-		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:99:13-55
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:107:13-55
 	android:name
-		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:98:13-63
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:106:13-63
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\ae591240e979bb64d23b62bb947034ab\AndroidManifest.xml:23:9-29:75
 	android:excludeFromRecents

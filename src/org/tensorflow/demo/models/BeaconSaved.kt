@@ -10,9 +10,6 @@ import io.realm.annotations.PrimaryKey
 import org.altbeacon.beacon.Beacon
 import java.util.*
 
-/**
- * Created by bridou_n on 30/09/2016.
- */
 
 open class BeaconSaved() : RealmObject(), Parcelable {
 
@@ -23,14 +20,14 @@ open class BeaconSaved() : RealmObject(), Parcelable {
     @SerializedName("manufacturer") var manufacturer: Int = 0
     @SerializedName("txPower") var txPower: Int = 0
     @SerializedName("rssi") var rssi: Int = 0
-    @SerializedName("distance") var distance: Double = 0.toDouble()
+   public @SerializedName("distance") var distance: Double = 0.toDouble()
     @SerializedName("lastSeen") var lastSeen: Long = 0
     @SerializedName("lastMinuteSeen") var lastMinuteSeen: Long = 0
 
     /**
      * Specialized field for every beacon type
      */
-    @SerializedName("ibeaconData") var ibeaconData: IbeaconData? = null
+   public @SerializedName("ibeaconData") var ibeaconData: IbeaconData? = null
 
     @SerializedName("telemetryData") var telemetryData: TelemetryData? = null
 
@@ -135,4 +132,9 @@ open class BeaconSaved() : RealmObject(), Parcelable {
     override fun toString(): String {
         return GsonBuilder().setPrettyPrinting().create().toJson(this.clone())
     }
+    public  fun getDistace():Double
+    {
+        return this.distance
+    }
+
 }

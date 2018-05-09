@@ -18,7 +18,7 @@ public class FirstPage extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firstpage);
         ImageView launcher = (ImageView) findViewById(R.id.launcherImageView);
-        launcher.setImageResource(R.drawable.pharaohs);
+        launcher.setImageResource(R.drawable.samak_abyad_2);
 
 
         new Handler().postDelayed(new Runnable() {

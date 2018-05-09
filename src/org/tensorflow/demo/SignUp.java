@@ -42,7 +42,7 @@ public class SignUp extends Activity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         ImageView signupImageView = (ImageView)findViewById(R.id.signupImageView);
-        signupImageView.setImageResource(R.drawable.pharaohs);
+        signupImageView.setImageResource(R.drawable.samak_abyad_2);
         name = (EditText) findViewById(R.id.name);
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);

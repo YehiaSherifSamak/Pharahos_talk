@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:theme="@style/Widget.MyApp.Toolbar.Solid"
+        app:titleTextColor="#FFFFFF">
+    </android.support.v7.widget.Toolbar>
+
+
+    <AutoCompleteTextView
+        android:textColor="@color/rating_background"
+        android:layout_marginRight="100dp"
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:hint="Where to go ......" >
+
+    </AutoCompleteTextView>
+
+    <Button
+        android:background="@drawable/button_background_2"
+        android:layout_marginLeft="130dp"
+        android:text="GUIDE ME"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+
+        android:id="@+id/guideMeButton"/>
+<ImageView
+    android:id="@+id/mapImageView2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    app:srcCompat="@drawable/corredor_senario_1"
+    android:layout_above="@+id/guideMeButton"
+    android:visibility="invisible"
+    />
+
+
+</RelativeLayout>

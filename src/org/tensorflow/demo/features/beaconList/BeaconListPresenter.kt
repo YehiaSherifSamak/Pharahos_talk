@@ -35,9 +35,6 @@ import org.altbeacon.beacon.BeaconConsumer
 import pub.devrel.easypermissions.EasyPermissions
 import javax.inject.Inject
 
-/**
- * Created by bridou_n on 22/08/2017.
- */
 
 class BeaconListPresenter(val view: BeaconListContract.View,
                           val rxBus: RxBus,
@@ -51,6 +48,7 @@ class BeaconListPresenter(val view: BeaconListContract.View,
     private val TAG = "BeaconListPresenter"
 
     private lateinit var beaconResults: RealmResults<BeaconSaved>
+
 
     private var bluetoothStateDisposable: Disposable? = null
     private var rangeDisposable: Disposable? = null
@@ -79,12 +77,13 @@ class BeaconListPresenter(val view: BeaconListContract.View,
                         }
                     }
                 }
-
-        beaconResults = realm.getScannedBeacons()
-        view.setAdapter(beaconResults)
+            beaconResults= realm.getScannedBeacons()
+        //beaconResults = realm.getScannedBeacons()
+      view.setAdapter(beaconResults)
 
         beaconResults.addChangeListener { results ->
             if (results.isLoaded) {
+
                 view.showEmptyView(results.size == 0)
             }
         }
@@ -299,5 +298,15 @@ class BeaconListPresenter(val view: BeaconListContract.View,
 
     override fun clear() {
         realm.close()
+    }
+  fun getClosesesBeacon():RealmResults<BeaconSaved>
+    {
+
+        var myOLdList = realm.getScannedBeacons()
+        var minBeacon =  myOLdList.minBy { it -> it.distance }
+       myOLdList.removeAll { true }
+        myOLdList.plus(minBeacon)
+        return  myOLdList
+
     }
 }
