@@ -48,8 +48,9 @@ public class SignIn extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
        Fabric.with(this, new Crashlytics());
+       FirebaseAuth.getInstance().useAppLanguage();
         loginButton = (Button) findViewById(R.id.signinButton);
-        registerButton = (TextView) findViewById(R.id.signupTextView);
+       // registerButton = (TextView) findViewById(R.id.signupTextView);
         emailEditText = (EditText) findViewById(R.id.emailEditText);
         passwordEditText = (EditText) findViewById(R.id.passwordEditText);
         //googleButton = (Button) findViewById(R.id.google_sign_in_button);

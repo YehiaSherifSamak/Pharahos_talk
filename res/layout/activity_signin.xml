@@ -30,7 +30,7 @@
         android:drawableLeft="@drawable/mail"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email_hint"
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:padding="8dp"
@@ -58,7 +58,7 @@
         android:drawableLeft="@drawable/lock"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password_hint"
         android:inputType="textPassword"
         android:maxLines="1"
         android:padding="8dp"
@@ -86,7 +86,7 @@
         android:layout_marginTop="32dp"
         android:background="@drawable/button_backround"
         android:clickable="true"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#33B5E5" />
 
     <Button
@@ -101,7 +101,7 @@
         android:layout_marginTop="13dp"
         android:background="@drawable/button_backround"
         android:clickable="true"
-        android:text="Sign Up"
+        android:text="@string/signup_button"
         android:textColor="#33B5E5" />
 
     <TextView
@@ -115,7 +115,7 @@
         android:ems="10"
         android:fontFamily="sans-serif"
         android:singleLine="false"
-        android:text="Forgot password?"
+        android:text="@string/forget_password"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"

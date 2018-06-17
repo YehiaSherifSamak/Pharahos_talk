@@ -36,8 +36,8 @@
 
     <ImageView
         android:id="@+id/upperImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
         android:visibility="invisible"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -61,6 +61,4 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="10dp"
         app:srcCompat="@drawable/ar" />
-
-
 </RelativeLayout>

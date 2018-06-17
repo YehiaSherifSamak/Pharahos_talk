@@ -289,7 +289,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                           double firstItemAcc = firstItemInTheResultList.getConfidence();
                           if((!firstItemName.equals("chairs") && !firstItemName.equals("floors")&& !firstItemName.equals("humans")&&
                           !firstItemName.equals("tables")&& !firstItemName.equals("walls") && !firstItemName.equals("cups")&& !firstItemName.equals("mouses"))
-                                  && firstItemAcc >= 0.9)
+                                  && firstItemAcc >= 0.92)
                               {
                                   switch (firstItemName)
                                   {
@@ -305,9 +305,9 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                                       case "sphinx":
                                           upperImageView.setImageResource(R.drawable.ssssphix);
                                           break;
-                                      case "ramsis":
+                                   /*   case "ramsis":
                                           upperImageView.setImageResource(R.drawable.ramsisd);
-                                          break;
+                                          break;*/
                                       case "ikhnaton":
                                           upperImageView.setImageResource(R.drawable.iiiiiiiiknaton);
 
@@ -336,6 +336,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
 
                                       Intent infoIntent = new Intent(ClassifierActivity.this, Info.class);
                                       infoIntent.putExtra("Monument_name", firstItemName);
+                                      infoIntent.putExtra("came_from", "camera");
 
                                       startActivity(infoIntent);
 
@@ -350,7 +351,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
                                   public void onClick(View v) {
                                       Intent infoIntent = new Intent(ClassifierActivity.this, Info.class);
                                       infoIntent.putExtra("Monument_name", firstItemName);
-
+                                      infoIntent.putExtra("came_from", "camera");
                                       startActivity(infoIntent);
                                   }
                               });

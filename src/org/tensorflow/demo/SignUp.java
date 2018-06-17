@@ -40,6 +40,7 @@ public class SignUp extends Activity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FirebaseAuth.getInstance().useAppLanguage();
         setContentView(R.layout.activity_signup);
         ImageView signupImageView = (ImageView)findViewById(R.id.signupImageView);
         signupImageView.setImageResource(R.drawable.samak_abyad_2);

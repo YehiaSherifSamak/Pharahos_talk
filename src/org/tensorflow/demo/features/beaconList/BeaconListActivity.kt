@@ -123,7 +123,7 @@ class BeaconListActivity : AppCompatActivity(), BeaconListContract.View, BeaconC
             val x = realm.getBeaconsScannedAfter(cal.timeInMillis)
             if(x.toString().equals("[]"))
             {
-                Toast.makeText(this,"please refersh", Toast.LENGTH_LONG).show()
+                Toast.makeText(this,R.string.guide_tip, Toast.LENGTH_LONG).show()
                 //   scanFab.setBackgroundColor(R.color.bgMoreInfo)
                 // searchFab.visibility = View.INVISIBLE;
             }

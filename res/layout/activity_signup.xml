@@ -15,6 +15,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/email"
         android:layout_marginBottom="320dp"
+        android:layout_marginTop="50dp"
         android:paddingBottom="70dp"
         app:srcCompat="@drawable/samak_abyad_2"
         />
@@ -29,7 +30,7 @@
         android:drawableLeft="@drawable/mail"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email_hint"
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:padding="8dp"
@@ -56,7 +57,7 @@
         android:drawableLeft="@drawable/user"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="@string/user_name"
         android:inputType="textPersonName"
         android:maxLines="1"
         android:padding="8dp"
@@ -84,7 +85,7 @@
         android:drawableLeft="@drawable/lock"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password_hint"
         android:inputType="textPassword"
         android:maxLines="1"
         android:padding="8dp"
@@ -113,7 +114,7 @@
         android:layout_marginTop="21dp"
         android:background="@drawable/button_backround"
         android:clickable="true"
-        android:text="Sign Up"
+        android:text="@string/signup_button"
         android:textColor="#33B5E5" />
 
     <TextView
@@ -130,7 +131,7 @@
         android:ems="10"
         android:fontFamily="sans-serif"
         android:singleLine="true"
-        android:text="Already have an account?"
+        android:text="@string/have_account"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"

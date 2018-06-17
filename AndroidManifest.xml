@@ -58,18 +58,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignIn"
+        <activity android:name="org.tensorflow.demo.SignIn"
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".SignUp"
+            android:name="org.tensorflow.demo.SignUp"
 
             android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:name=".FirstPage"
+            android:name="org.tensorflow.demo.FirstPage"
 
             android:screenOrientation="portrait">
             <intent-filter>
@@ -98,7 +98,7 @@
             android:theme="@style/SplashTheme">
 
         </activity>
-        <activity android:name=".GuideActivity"
+        <activity android:name="org.tensorflow.demo.GuideActivity"
             android:theme="@style/Theme.AppCompat.Light"></activity>
 
         <activity
@@ -106,6 +106,24 @@
             android:name=".features.settings.SettingsActivity"
             android:theme="@style/AppThemeNoActionBar" />
 
+
+
+        <activity android:name="org.tensorflow.demo.Language"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+
+
+
+
+
+        <activity
+            android:name="org.tensorflow.demo.CatalogMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+        <activity android:name="org.tensorflow.demo.MonumentsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"   />
 
     </application>
 

@@ -68,5 +68,8 @@
     <!-- Cards icon colors -->
     <color name="iconColors">#FFD54F</color>
     <color name="rateStarColor">#FFD54F</color>
-    <!--  /////////////////////////////////-->
+    <!--  /////////////////////////////////fathy-->
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overlayActionBar">#0e0d0e</color>
+
 </resources>

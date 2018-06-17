@@ -26,14 +26,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_weight="1"
-        android:hint="Where to go ......" >
+        android:hint="@string/where_to_go" >
 
     </AutoCompleteTextView>
 
     <Button
         android:background="@drawable/button_background_2"
         android:layout_marginLeft="130dp"
-        android:text="GUIDE ME"
+        android:text="@string/guide_me"
         android:layout_marginTop="200dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

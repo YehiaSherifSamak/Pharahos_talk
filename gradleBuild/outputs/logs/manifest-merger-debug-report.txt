@@ -1,12 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
-INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
-INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-131:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-131:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-131:12
 MERGED from [io.realm:realm-android-library:4.1.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\realm-android-library-4.1.0.aar\be09c573fde6e7399ac459cbb62cde2f\AndroidManifest.xml:2:1-11:12
 MERGED from [org.tensorflow:tensorflow-android:1.5.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.5.0.aar\19a60677dbf16e6816862610336b48e4\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\29fd537911351a065d1468e3d39bb37a\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-firestore:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-firestore-11.8.0.aar\960fddaacf3583fafccc27381196ad7d\AndroidManifest.xml:2:1-8:12
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-1.2.0.aar\34fd799e15e8db95e3f438cf30921c72\AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.firebase:firebase-database:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-11.8.0.aar\f6470854768a795faa40f8f99f68d369\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-storage:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.8.0.aar\807ca6d65e2fb3f86989ea8678c8aa39\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\ae591240e979bb64d23b62bb947034ab\AndroidManifest.xml:17:1-32:12
@@ -18,9 +19,9 @@ MERGED from [com.cepheuen.elegant-number-button:lib:1.0.2] C:\Users\yahya\.gradl
 MERGED from [com.android.support:design:27.0.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\08fb54338026d1a2385db4492802fb65\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.dagger:dagger-android-support:2.11-rc2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\dagger-android-support-2.11-rc2.aar\0761ab4e143a3b78cf1484cf5a4c0af1\AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\f5eb1fdb78f4d638422a3dbb54f0e19b\AndroidManifest.xml:17:1-54:12
-MERGED from [com.google.firebase:firebase-database-connection:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\64d8d8f356dadf49942162158f8e529a\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\67c97a31c0f8e12a4f86ef18ac2b20dd\AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\f5792466c95b5c5736f32fce441cee93\AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-database-connection:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\64d8d8f356dadf49942162158f8e529a\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\bb4734cf000a1f9eed316e7f99ba97c1\AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\29e0b85aaf826fbe73f3ccbdb701a8fe\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\08eb74af32c595679780931875f22dcc\AndroidManifest.xml:2:1-7:12
@@ -34,6 +35,7 @@ MERGED from [com.android.support:support-v13:25.3.1] C:\Users\yahya\.gradle\cach
 MERGED from [com.android.support:support-v4:27.0.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\3d3ca92907e84f51a0de2556e0263db6\AndroidManifest.xml:17:1-22:12
 MERGED from [pub.devrel:easypermissions:0.4.3] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\easypermissions-0.4.3.aar\5f3cf9e83e9e1c1b19f93b7af50aa498\AndroidManifest.xml:2:1-19:12
 MERGED from [com.getkeepsafe.taptargetview:taptargetview:1.10.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\taptargetview-1.10.0.aar\2a43971b40c711fea2fd2c2c1ac43089\AndroidManifest.xml:2:1-8:12
+MERGED from [com.rengwuxian.materialedittext:library:2.1.4] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\library-2.1.4.aar\8cdd976de1bc7963858d6e2c7d73f038\AndroidManifest.xml:2:1-10:12
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\library-1.4.1.aar\4d091f0709bdae642ef9129bf3157819\AndroidManifest.xml:6:1-16:12
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\5a2068cc252e01adfdc40349fe75e3bc\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.0.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.2.aar\b3a0e7b7a8788221b338a37ac426dc43\AndroidManifest.xml:17:1-22:12
@@ -44,6 +46,8 @@ MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\yahya\.gradle\caches
 MERGED from [io.realm:android-adapters:2.1.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\android-adapters-2.1.0.aar\7922bab5ba2eaf42ae44d5a64f5f44c6\AndroidManifest.xml:2:1-10:12
 MERGED from [org.altbeacon:android-beacon-library:2.12.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.12.1.aar\94b672d8cab9f6acad2a9eadef1ae41a\AndroidManifest.xml:2:1-44:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\280a794ce72c47e350b6d2396049dcfb\AndroidManifest.xml:2:1-11:12
+MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\com.amulyakhare.textdrawable-1.0.1.aar\3917b736588f19cbe79a2706e2b8bc4c\AndroidManifest.xml:2:1-14:12
+MERGED from [info.hoang8f:fbutton:1.0.5] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\fbutton-1.0.5.aar\7eb575b03228938d5056ec7b20e3a883\AndroidManifest.xml:2:1-11:12
 MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\a677969627ca62d4e0ad86cc653c6b8a\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-database-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.8.0.aar\2594532d2c6c8507f24b75d69216bc74\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-storage-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-storage-license-11.8.0.aar\aeea8683e980e03c0bc45a0689384a0e\AndroidManifest.xml:2:1-6:12
@@ -65,7 +69,6 @@ MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] C:\Users\yah
 MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\6cb1c0a0f20ca891450afec893c0dce0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-common-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.8.0.aar\6dc480efda922b7f8aeaa13a23d907dc\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\55d1877a4f6a4014eacabebce6721ef6\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\02e3c814238b868610de7b188be3311f\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.8.0.aar\6289382de55755d13a55df8408dcf0d5\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\c6a32b62b930f5de59d93a7992a8c73c\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\9a2f45b963ee71483199c572ef663059\AndroidManifest.xml:2:1-6:12
@@ -74,8 +77,9 @@ MERGED from [com.google.android.gms:play-services-vision-common-license:11.8.0] 
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\2ecf85c833e3accf15288c00b1e917ed\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\b56988d0c984c817aae556cbe172bb33\AndroidManifest.xml:2:1-6:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\814b2ec90968841eb48ababfd42e79c3\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
-INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
+MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\02e3c814238b868610de7b188be3311f\AndroidManifest.xml:2:1-6:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-131:12
+INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-131:12
 	package
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:18:5-34
 		INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml
@@ -84,7 +88,7 @@ INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:17:5-51
 	android:versionCode
 		INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml
-		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-113:12
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:1-131:12
 		INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:16:11-69
@@ -98,6 +102,8 @@ MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yahya\.gradle\ca
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\29fd537911351a065d1468e3d39bb37a\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-firestore:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-firestore-11.8.0.aar\960fddaacf3583fafccc27381196ad7d\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-firestore:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-firestore-11.8.0.aar\960fddaacf3583fafccc27381196ad7d\AndroidManifest.xml:6:5-44
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-1.2.0.aar\34fd799e15e8db95e3f438cf30921c72\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-1.2.0.aar\34fd799e15e8db95e3f438cf30921c72\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-database:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-11.8.0.aar\f6470854768a795faa40f8f99f68d369\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-database:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-11.8.0.aar\f6470854768a795faa40f8f99f68d369\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-storage:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.8.0.aar\807ca6d65e2fb3f86989ea8678c8aa39\AndroidManifest.xml:6:5-44
@@ -120,12 +126,12 @@ MERGED from [com.google.dagger:dagger-android-support:2.11-rc2] C:\Users\yahya\.
 MERGED from [com.google.dagger:dagger-android-support:2.11-rc2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\dagger-android-support-2.11-rc2.aar\0761ab4e143a3b78cf1484cf5a4c0af1\AndroidManifest.xml:18:3-42
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\f5eb1fdb78f4d638422a3dbb54f0e19b\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\f5eb1fdb78f4d638422a3dbb54f0e19b\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-database-connection:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\64d8d8f356dadf49942162158f8e529a\AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database-connection:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\64d8d8f356dadf49942162158f8e529a\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\67c97a31c0f8e12a4f86ef18ac2b20dd\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\67c97a31c0f8e12a4f86ef18ac2b20dd\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\f5792466c95b5c5736f32fce441cee93\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\f5792466c95b5c5736f32fce441cee93\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-connection:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\64d8d8f356dadf49942162158f8e529a\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-connection:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\64d8d8f356dadf49942162158f8e529a\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\bb4734cf000a1f9eed316e7f99ba97c1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\bb4734cf000a1f9eed316e7f99ba97c1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\29e0b85aaf826fbe73f3ccbdb701a8fe\AndroidManifest.xml:5:5-44
@@ -152,6 +158,8 @@ MERGED from [pub.devrel:easypermissions:0.4.3] C:\Users\yahya\.gradle\caches\tra
 MERGED from [pub.devrel:easypermissions:0.4.3] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\easypermissions-0.4.3.aar\5f3cf9e83e9e1c1b19f93b7af50aa498\AndroidManifest.xml:7:5-9:41
 MERGED from [com.getkeepsafe.taptargetview:taptargetview:1.10.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\taptargetview-1.10.0.aar\2a43971b40c711fea2fd2c2c1ac43089\AndroidManifest.xml:6:5-44
 MERGED from [com.getkeepsafe.taptargetview:taptargetview:1.10.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\taptargetview-1.10.0.aar\2a43971b40c711fea2fd2c2c1ac43089\AndroidManifest.xml:6:5-44
+MERGED from [com.rengwuxian.materialedittext:library:2.1.4] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\library-2.1.4.aar\8cdd976de1bc7963858d6e2c7d73f038\AndroidManifest.xml:6:5-8:41
+MERGED from [com.rengwuxian.materialedittext:library:2.1.4] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\library-2.1.4.aar\8cdd976de1bc7963858d6e2c7d73f038\AndroidManifest.xml:6:5-8:41
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\library-1.4.1.aar\4d091f0709bdae642ef9129bf3157819\AndroidManifest.xml:12:5-14:41
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\library-1.4.1.aar\4d091f0709bdae642ef9129bf3157819\AndroidManifest.xml:12:5-14:41
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\5a2068cc252e01adfdc40349fe75e3bc\AndroidManifest.xml:20:5-44
@@ -172,6 +180,10 @@ MERGED from [org.altbeacon:android-beacon-library:2.12.1] C:\Users\yahya\.gradle
 MERGED from [org.altbeacon:android-beacon-library:2.12.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.12.1.aar\94b672d8cab9f6acad2a9eadef1ae41a\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\280a794ce72c47e350b6d2396049dcfb\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\280a794ce72c47e350b6d2396049dcfb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\com.amulyakhare.textdrawable-1.0.1.aar\3917b736588f19cbe79a2706e2b8bc4c\AndroidManifest.xml:8:5-10:41
+MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\com.amulyakhare.textdrawable-1.0.1.aar\3917b736588f19cbe79a2706e2b8bc4c\AndroidManifest.xml:8:5-10:41
+MERGED from [info.hoang8f:fbutton:1.0.5] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\fbutton-1.0.5.aar\7eb575b03228938d5056ec7b20e3a883\AndroidManifest.xml:7:5-9:41
+MERGED from [info.hoang8f:fbutton:1.0.5] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\fbutton-1.0.5.aar\7eb575b03228938d5056ec7b20e3a883\AndroidManifest.xml:7:5-9:41
 MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\a677969627ca62d4e0ad86cc653c6b8a\AndroidManifest.xml:7:5-43
 MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\a677969627ca62d4e0ad86cc653c6b8a\AndroidManifest.xml:7:5-43
 MERGED from [com.google.firebase:firebase-database-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.8.0.aar\2594532d2c6c8507f24b75d69216bc74\AndroidManifest.xml:4:5-43
@@ -214,8 +226,6 @@ MERGED from [com.google.firebase:firebase-common-license:11.8.0] C:\Users\yahya\
 MERGED from [com.google.firebase:firebase-common-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.8.0.aar\6dc480efda922b7f8aeaa13a23d907dc\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\55d1877a4f6a4014eacabebce6721ef6\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\55d1877a4f6a4014eacabebce6721ef6\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\02e3c814238b868610de7b188be3311f\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\02e3c814238b868610de7b188be3311f\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.8.0.aar\6289382de55755d13a55df8408dcf0d5\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.8.0.aar\6289382de55755d13a55df8408dcf0d5\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\c6a32b62b930f5de59d93a7992a8c73c\AndroidManifest.xml:4:5-43
@@ -232,6 +242,8 @@ MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yahya\.gr
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\b56988d0c984c817aae556cbe172bb33\AndroidManifest.xml:4:5-43
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\814b2ec90968841eb48ababfd42e79c3\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\814b2ec90968841eb48ababfd42e79c3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\02e3c814238b868610de7b188be3311f\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\02e3c814238b868610de7b188be3311f\AndroidManifest.xml:4:5-43
 INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:21:5-23:41
 INJECTED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:21:5-23:41
 	tools:overrideLibrary
@@ -303,11 +315,13 @@ ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:40:
 	android:name
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:40:16-70
 application
-ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:44:5-110:19
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:44:5-128:19
 MERGED from [org.tensorflow:tensorflow-android:1.5.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.5.0.aar\19a60677dbf16e6816862610336b48e4\AndroidManifest.xml:5:5-6:19
 MERGED from [org.tensorflow:tensorflow-android:1.5.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.5.0.aar\19a60677dbf16e6816862610336b48e4\AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\29fd537911351a065d1468e3d39bb37a\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\29fd537911351a065d1468e3d39bb37a\AndroidManifest.xml:5:5-20
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-1.2.0.aar\34fd799e15e8db95e3f438cf30921c72\AndroidManifest.xml:13:5-17:19
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-1.2.0.aar\34fd799e15e8db95e3f438cf30921c72\AndroidManifest.xml:13:5-17:19
 MERGED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\ae591240e979bb64d23b62bb947034ab\AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\ae591240e979bb64d23b62bb947034ab\AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\6490f53495455788e7d1e8644e098945\AndroidManifest.xml:22:5-37:19
@@ -346,6 +360,8 @@ MERGED from [org.altbeacon:android-beacon-library:2.12.1] C:\Users\yahya\.gradle
 MERGED from [org.altbeacon:android-beacon-library:2.12.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\android-beacon-library-2.12.1.aar\94b672d8cab9f6acad2a9eadef1ae41a\AndroidManifest.xml:20:5-42:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\280a794ce72c47e350b6d2396049dcfb\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\280a794ce72c47e350b6d2396049dcfb\AndroidManifest.xml:9:5-20
+MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\com.amulyakhare.textdrawable-1.0.1.aar\3917b736588f19cbe79a2706e2b8bc4c\AndroidManifest.xml:12:5-20
+MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\com.amulyakhare.textdrawable-1.0.1.aar\3917b736588f19cbe79a2706e2b8bc4c\AndroidManifest.xml:12:5-20
 MERGED from [com.google.firebase:firebase-database-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.8.0.aar\2594532d2c6c8507f24b75d69216bc74\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-database-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.8.0.aar\2594532d2c6c8507f24b75d69216bc74\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-storage-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-storage-license-11.8.0.aar\aeea8683e980e03c0bc45a0689384a0e\AndroidManifest.xml:5:5-20
@@ -370,8 +386,6 @@ MERGED from [com.google.firebase:firebase-common-license:11.8.0] C:\Users\yahya\
 MERGED from [com.google.firebase:firebase-common-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.8.0.aar\6dc480efda922b7f8aeaa13a23d907dc\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\55d1877a4f6a4014eacabebce6721ef6\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\55d1877a4f6a4014eacabebce6721ef6\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\02e3c814238b868610de7b188be3311f\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\02e3c814238b868610de7b188be3311f\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.8.0.aar\6289382de55755d13a55df8408dcf0d5\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-storage-common-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.8.0.aar\6289382de55755d13a55df8408dcf0d5\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-base-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\c6a32b62b930f5de59d93a7992a8c73c\AndroidManifest.xml:5:5-20
@@ -386,6 +400,8 @@ MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\User
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\2ecf85c833e3accf15288c00b1e917ed\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\b56988d0c984c817aae556cbe172bb33\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\b56988d0c984c817aae556cbe172bb33\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\02e3c814238b868610de7b188be3311f\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-connection-license:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\02e3c814238b868610de7b188be3311f\AndroidManifest.xml:5:5-20
 	android:supportsRtl
 		ADDED from [com.nightonke:boommenu:1.0.9] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\boommenu-1.0.9.aar\55de3d44fc4e2d303db814c4f135832e\AndroidManifest.xml:14:9-35
 	android:label
@@ -427,19 +443,19 @@ ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:61:
 	android:screenOrientation
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:62:13-49
 	android:name
-		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:61:19-41
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:61:19-60
 activity#org.tensorflow.demo.SignUp
 ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:65:9-70:20
 	android:screenOrientation
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:68:13-49
 	android:name
-		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:66:13-35
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:66:13-54
 activity#org.tensorflow.demo.FirstPage
 ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:71:9-82:20
 	android:screenOrientation
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:74:13-49
 	android:name
-		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:72:13-38
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:72:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:75:13-80:29
 action#android.intent.action.MAIN
@@ -483,13 +499,63 @@ ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:101
 	android:theme
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:102:13-57
 	android:name
-		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:101:19-48
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:101:19-67
 activity#org.tensorflow.demo.features.settings.SettingsActivity
 ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:104:9-107:58
 	android:theme
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:107:13-55
 	android:name
 		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:106:13-63
+activity#org.tensorflow.demo.Language
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:111:9-112:69
+	android:theme
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:112:13-57
+	android:name
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:111:19-62
+activity#org.tensorflow.demo.CatalogMainActivity
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:118:9-121:58
+	android:label
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:120:13-45
+	android:theme
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:121:13-56
+	android:name
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:119:13-67
+activity#org.tensorflow.demo.MonumentsActivity
+ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:124:9-126:61
+	android:label
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:125:13-45
+	android:theme
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:126:13-56
+	android:name
+		ADDED from C:\Users\yahya\AndroidStudioProjects\tfmobile\AndroidManifest.xml:124:19-71
+uses-permission#android.permission.INTERNET
+ADDED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-1.2.0.aar\34fd799e15e8db95e3f438cf30921c72\AndroidManifest.xml:11:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.0.aar\2e2dd726fada7b000352c746c46da047\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.0.aar\2e2dd726fada7b000352c746c46da047\AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\f5eb1fdb78f4d638422a3dbb54f0e19b\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\f5eb1fdb78f4d638422a3dbb54f0e19b\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\67c97a31c0f8e12a4f86ef18ac2b20dd\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\67c97a31c0f8e12a4f86ef18ac2b20dd\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\f5792466c95b5c5736f32fce441cee93\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\f5792466c95b5c5736f32fce441cee93\AndroidManifest.xml:23:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.6.0.aar\2648097f2670dce797e2ac357e2bb325\AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.6.0.aar\2648097f2670dce797e2ac357e2bb325\AndroidManifest.xml:52:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\fabric-1.4.2.aar\829af2c710bb2873d05513d225d05254\AndroidManifest.xml:29:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\fabric-1.4.2.aar\829af2c710bb2873d05513d225d05254\AndroidManifest.xml:29:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.7] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\beta-1.2.7.aar\3a743b55f4c4a4fdc9154a507b364eb5\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.7] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\beta-1.2.7.aar\3a743b55f4c4a4fdc9154a507b364eb5\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\answers-1.4.1.aar\59971e98fae78addef0357501860cad7\AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\answers-1.4.1.aar\59971e98fae78addef0357501860cad7\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-1.2.0.aar\34fd799e15e8db95e3f438cf30921c72\AndroidManifest.xml:11:22-64
+meta-data#com.google.android.gms.version
+ADDED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-1.2.0.aar\34fd799e15e8db95e3f438cf30921c72\AndroidManifest.xml:14:9-16:69
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bf53897d51c32e7ea970055a6aeec386\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bf53897d51c32e7ea970055a6aeec386\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-1.2.0.aar\34fd799e15e8db95e3f438cf30921c72\AndroidManifest.xml:16:13-66
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-database:1.2.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-1.2.0.aar\34fd799e15e8db95e3f438cf30921c72\AndroidManifest.xml:15:13-58
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\ae591240e979bb64d23b62bb947034ab\AndroidManifest.xml:23:9-29:75
 	android:excludeFromRecents
@@ -522,24 +588,6 @@ ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yahya\.gr
 		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\6490f53495455788e7d1e8644e098945\AndroidManifest.xml:36:13-107
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\6490f53495455788e7d1e8644e098945\AndroidManifest.xml:34:13-89
-uses-permission#android.permission.INTERNET
-ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.0.aar\2e2dd726fada7b000352c746c46da047\AndroidManifest.xml:9:5-67
-MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\f5eb1fdb78f4d638422a3dbb54f0e19b\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\f5eb1fdb78f4d638422a3dbb54f0e19b\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\67c97a31c0f8e12a4f86ef18ac2b20dd\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\67c97a31c0f8e12a4f86ef18ac2b20dd\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\f5792466c95b5c5736f32fce441cee93\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\f5792466c95b5c5736f32fce441cee93\AndroidManifest.xml:23:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.6.0.aar\2648097f2670dce797e2ac357e2bb325\AndroidManifest.xml:52:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-core-2.6.0.aar\2648097f2670dce797e2ac357e2bb325\AndroidManifest.xml:52:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.4.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\fabric-1.4.2.aar\829af2c710bb2873d05513d225d05254\AndroidManifest.xml:29:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.4.2] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\fabric-1.4.2.aar\829af2c710bb2873d05513d225d05254\AndroidManifest.xml:29:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.2.7] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\beta-1.2.7.aar\3a743b55f4c4a4fdc9154a507b364eb5\AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.2.7] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\beta-1.2.7.aar\3a743b55f4c4a4fdc9154a507b364eb5\AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.4.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\answers-1.4.1.aar\59971e98fae78addef0357501860cad7\AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.4.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\answers-1.4.1.aar\59971e98fae78addef0357501860cad7\AndroidManifest.xml:9:5-67
-	android:name
-		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.0.aar\2e2dd726fada7b000352c746c46da047\AndroidManifest.xml:9:22-64
 provider#com.crashlytics.android.CrashlyticsInitProvider
 ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\crashlytics-2.9.0.aar\2e2dd726fada7b000352c746c46da047\AndroidManifest.xml:12:9-16:39
 	android:authorities
@@ -692,12 +740,6 @@ ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yahya\.gr
 		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\38850fa5d01bdbd9e44a3bc7b016c83f\AndroidManifest.xml:26:13-72
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\38850fa5d01bdbd9e44a3bc7b016c83f\AndroidManifest.xml:24:13-79
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bf53897d51c32e7ea970055a6aeec386\AndroidManifest.xml:23:9-25:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bf53897d51c32e7ea970055a6aeec386\AndroidManifest.xml:25:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bf53897d51c32e7ea970055a6aeec386\AndroidManifest.xml:24:13-58
 meta-data#android.support.VERSION
 ADDED from [com.android.support:support-v13:25.3.1] C:\Users\yahya\.gradle\caches\transforms-1\files-1.1\support-v13-25.3.1.aar\4d5b37578844816c8ca194941609fbd1\AndroidManifest.xml:25:5-27:34
 	android:value

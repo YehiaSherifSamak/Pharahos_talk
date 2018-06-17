@@ -252,7 +252,14 @@ android {
                 // Material dialog
                 compile 'com.afollestad.material-dialogs:core:0.9.4.5'
 
-                //--------------------------------------------------------new Module
+                //--------------------------------------------------------new Module Fathyyy
+                compile 'com.squareup.picasso:picasso:2.5.2'
+                compile 'com.firebaseui:firebase-ui-database:1.2.0'
+                compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+                compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+                compile 'com.cepheuen.elegant-number-button:lib:1.0.2'
+                compile 'info.hoang8f:fbutton:1.0.5'
+                compile 'com.rengwuxian.materialedittext:library:2.1.4'
 
             }
 
